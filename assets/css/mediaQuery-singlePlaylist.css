@@ -1,0 +1,156 @@
+/* --------------------------------1025px-------------------------------- */
+@media only screen and (max-width: 1025px) {
+	.left-side .banner .image {
+		width: 45%;
+	}
+}
+/* --------------------------------950px-------------------------------- */
+@media only screen and (max-width: 950px) {
+	.second-div {
+		gap: 1rem;
+		transition: all 0.4s linear;
+	}
+}
+/* --------------------------------870px-------------------------------- */
+@media only screen and (max-width: 870px) {
+	.menu {
+		display: initial;
+		margin-top: auto;
+		margin-bottom: auto;
+		transition: all 0.4s linear;
+	}
+	.navbar .profile-pic {
+		display: none;
+		transition: all 0.4s linear;
+	}
+	.navbar .notification {
+		display: none;
+		transition: all 0.4s linear;
+	}
+	.left-side {
+		width: 96%;
+		display: block;
+		background: transparent;
+		z-index: 2;
+	}
+	.right-side {
+		width: 100%;
+		display: block;
+		height: auto;
+		overflow: hidden;
+	}
+	.right-side .similar-artists .content .slot .about,
+	.right-side .recently-played .content .slot .about {
+		width: 90%;
+	}
+}
+/* --------------------------------800px-------------------------------- */
+@media only screen and (max-width: 800px) {
+	.second-div {
+		gap: 0.4rem;
+		transition: all 0.4s linear;
+	}
+	.navbar .favourites {
+		margin-left: 0.4rem;
+		transition: all 0.5s ease-in;
+	}
+}
+/* --------------------------------720px-------------------------------- */
+@media only screen and (max-width: 720px) {
+	.navbar div.search {
+		display: none;
+	}
+	.navbar .second-div {
+		justify-content: flex-end;
+		transition: all 0.5s ease-in;
+		width: 10%;
+	}
+	.navbar {
+		justify-content: space-between;
+		padding-right: 0%;
+	}
+	.navbar .first-div {
+		width: 90%;
+	}
+	.navbar .favourites {
+		transition: all 0.5s ease-in;
+		margin-left: 10%;
+	}
+	.menu .options li:first-child + li {
+		border-bottom: 1px solid black;
+	}
+	.menu .options li:last-child {
+		display: inline-block;
+		width: 100%;
+	}
+	.navbar .logo {
+		width: 40px;
+		min-width: 40px;
+		height: 40px;
+	}
+	.navbar .favourites {
+		transition: all 0.5s ease-in;
+		font-size: 0.8rem;
+	}
+	.navbar .company {
+		font-size: 1rem;
+	}
+	.navbar .company > * + * + * {
+		font-size: 1.4rem;
+	}
+	.menu #checkbox-label {
+		bottom: 20%;
+		font-size: 1.5rem;
+	}
+	.left-side .banner .image {
+		width: 60%;
+	}
+	.left-side .banner {
+		z-index: 1;
+	}
+	.left-side .text {
+		z-index: 2;
+	}
+}
+/* --------------------------------532px-------------------------------- */
+@media only screen and (max-width: 532px) {
+	.banner {
+		flex-direction: column;
+		border-radius: 20px;
+	}
+	.left-side .banner .image {
+		background-size: cover;
+		width: 100%;
+		height: 25rem;
+		min-height: 25rem;
+		opacity: 0.7;
+		border-radius: 20px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+	.left-side .banner .text {
+		width: 100%;
+		border-radius: 20px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+}
+/* --------------------------------460px-------------------------------- */
+@media only screen and (max-width: 460px) {
+	footer {
+		justify-content: center;
+		align-items: center;
+	}
+	footer .two {
+		flex-direction: column;
+		margin-bottom: 5%;
+	}
+	footer .line {
+		border-right: 0;
+		border-bottom: 2px solid lightgray;
+		padding-bottom: 5%;
+	}
+	footer .contact {
+		margin-top: 5%;
+	}
+}

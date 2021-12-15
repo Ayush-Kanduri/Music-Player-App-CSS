@@ -1,0 +1,2447 @@
+/* --------------Playbar Structure-------------- */
+.playbar {
+	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;
+	background-color: #181818;
+	overflow: hidden;
+	min-height: 80px;
+	z-index: 100;
+	border-top: 3px inset gray;
+}
+/* --------------Album Component-------------- */
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album {
+	width: 30%;
+	padding: 0.6rem;
+	overflow: hidden;
+}
+.latest-releases
+	.content
+	.slot:nth-child(1)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image,
+.right-side
+	.playlist-section
+	.slot:nth-child(13)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/latest-release1.jpg");
+}
+.latest-releases
+	.content
+	.slot:nth-child(2)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image,
+.right-side
+	.playlist-section
+	.slot:nth-child(14)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/latest-release2.jpg");
+}
+.latest-releases
+	.content
+	.slot:nth-child(3)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image,
+.right-side
+	.playlist-section
+	.slot:nth-child(15)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/latest-release3.png");
+}
+.latest-releases
+	.content
+	.slot:nth-child(4)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image,
+.right-side
+	.playlist-section
+	.slot:nth-child(16)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/latest-release4.jpg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(1)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song1-hindi.jpg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(2)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song1.jpg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(3)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song2-hindi.jpg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(4)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song2.jpeg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(5)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song3-hindi.jpg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(6)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song3.jpeg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(7)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song4-hindi.jpg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(8)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song4.jpg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(9)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song5-hindi.jpg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(10)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song5.jpeg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(11)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song6-hindi.jpg");
+}
+.right-side
+	.playlist-section
+	.slot:nth-child(12)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	background-image: url("../images/song6.jpeg");
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-image {
+	width: 20%;
+	min-width: 70px;
+	min-height: 70px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-info,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-info {
+	width: 35%;
+	padding-bottom: 3.1%;
+	overflow: hidden;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-info
+	:first-child,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-info
+	p {
+	background: transparent;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-info
+	:first-child,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-info
+	:first-child {
+	color: var(--white);
+	overflow: hidden;
+	animation: slide-left 8.5s 5s linear infinite;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-info
+	:last-child,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-info
+	:last-child {
+	color: gray;
+	font-size: smaller;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-like,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-like {
+	min-height: 70px;
+	max-height: 70px;
+	width: 25%;
+	padding-top: 3.5%;
+	padding-left: 3%;
+	padding-right: 8%;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-like
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-like
+	i {
+	color: var(--white);
+	transition: all 0.2s ease-in;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-like
+	i:hover,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.album
+	.album-like
+	i:hover {
+	color: red;
+	cursor: pointer;
+}
+@keyframes slide-left {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+	to {
+		margin-left: -82%;
+		width: 100%;
+	}
+}
+/* --------------Main Controls Component-------------- */
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control {
+	width: 40%;
+	overflow: hidden;
+	margin-left: 1%;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.top,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.top {
+	width: 100%;
+	padding-left: 33%;
+	padding-right: 33%;
+	padding-top: 2.5%;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	i {
+	color: var(--white);
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.fa-random,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.fa-random {
+	font-size: 0.8rem;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.fa-redo,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.fa-redo {
+	font-size: 0.7rem;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle1
+	+ label
+	i,
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle2
+	+ label
+	i,
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle3
+	+ label
+	i,
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle4
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle17
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle18
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle19
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle20
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle21
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle22
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle23
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle24
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle25
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle26
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle27
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle28
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle29
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle30
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle31
+	+ label
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle32
+	+ label
+	i {
+	color: var(--white);
+	font-size: 2.15rem;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom {
+	padding: 2%;
+	padding-top: 3%;
+	width: 100%;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	span,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	span {
+	color: var(--white);
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	input[type="range"],
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	input[type="range"] {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline {
+	-webkit-appearance: none;
+	width: 70%;
+	background-color: transparent;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline::-webkit-slider-runnable-track,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 53%;
+	cursor: pointer;
+	animation: 0.2s;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+	background: #37e88a;
+	border-radius: 5px;
+	border: 1px solid #000000;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline::-webkit-slider-thumb,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline::-webkit-slider-thumb {
+	box-shadow: 1px 1px 1px #000000;
+	border: 1px solid #000000;
+	height: 20px;
+	width: 12px;
+	border-radius: 5px;
+	background-color: var(--white);
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -7px;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline:focus,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline:focus {
+	outline: none;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline:focus::-webkit-slider-runnable-track,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	.bottom
+	#timeline:focus::-webkit-slider-runnable-track {
+	background: #37e88a;
+}
+/* --------------Side Controls Component-------------- */
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control {
+	width: 30%;
+	padding: 2%;
+	padding-left: 8%;
+	padding-right: 5%;
+	overflow: hidden;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	i,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	i {
+	color: var(--white);
+	cursor: pointer;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	.fa-volume-up,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	.fa-volume-up {
+	color: lightgray;
+	cursor: initial;
+	margin-right: -5%;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	#volume,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	#volume {
+	-webkit-appearance: none;
+	width: 40%;
+	background-color: transparent;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	#volume::-webkit-slider-runnable-track,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	#volume::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 53%;
+	cursor: pointer;
+	animation: 0.2s;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+	background: #37e88a;
+	border-radius: 5px;
+	border: 1px solid #000000;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	#volume:focus,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	#volume:focus {
+	outline: none;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	input[type="range"]#volume::-webkit-slider-thumb,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	input[type="range"]#volume::-webkit-slider-thumb {
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+	border: 1px solid #000000;
+	height: 20px;
+	width: 12px;
+	border-radius: 5px;
+	background-color: var(--white);
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -7px;
+}
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	input[type="range"]#volume:focus::-webkit-slider-runnable-track,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.side-control
+	input[type="range"]#volume:focus::-webkit-slider-runnable-track {
+	background: #37e88a;
+}
+/* ----------------Playbar Toggle----------------- */
+.latest-releases
+	.content
+	.slot:nth-child(1)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.latest-releases
+	.content
+	.slot:nth-child(2)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.latest-releases
+	.content
+	.slot:nth-child(3)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.latest-releases
+	.content
+	.slot:nth-child(4)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(1)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(2)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(3)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(4)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(5)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(6)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(7)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(8)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(9)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(10)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(11)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(12)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(13)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(14)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(15)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(16)
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar {
+	display: none;
+}
+.latest-releases
+	.content
+	.slot:nth-child(1)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.latest-releases
+	.content
+	.slot:nth-child(2)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.latest-releases
+	.content
+	.slot:nth-child(3)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.latest-releases
+	.content
+	.slot:nth-child(4)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(1)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(2)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(3)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(4)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(5)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(6)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(7)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(8)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(9)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(10)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(11)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(12)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(13)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(14)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(15)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar,
+.right-side
+	.playlist-section
+	.slot:nth-child(16)
+	.image
+	input[type="checkbox"]:checked
+	+ label
+	+ .playbar {
+	display: flex;
+}
+/* ----------------Playbar Play-Pause Icon Toggle----------------- */
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle1
+	+ label
+	.fa-play-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle1:checked
+	+ label
+	.fa-pause-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle2
+	+ label
+	.fa-play-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle2:checked
+	+ label
+	.fa-pause-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle3
+	+ label
+	.fa-play-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle3:checked
+	+ label
+	.fa-pause-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle4
+	+ label
+	.fa-play-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle4:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle17
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle17:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle18
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle18:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle19
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle19:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle20
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle20:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle21
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle21:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle22
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle22:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle23
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle23:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle24
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle24:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle25
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle25:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle26
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle26:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle27
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle27:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle28
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle28:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle29
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle29:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle30
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle30:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle31
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle31:checked
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle32
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle32:checked
+	+ label
+	.fa-pause-circle {
+	display: initial;
+}
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle1
+	+ label
+	.fa-pause-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle1:checked
+	+ label
+	.fa-play-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle2
+	+ label
+	.fa-pause-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle2:checked
+	+ label
+	.fa-play-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle3
+	+ label
+	.fa-pause-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle3:checked
+	+ label
+	.fa-play-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle4
+	+ label
+	.fa-pause-circle,
+.latest-releases
+	.content
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle4:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle17
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle17:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle18
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle18:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle19
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle19:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle20
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle20:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle21
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle21:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle22
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle22:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle23
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle23:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle24
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle24:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle25
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle25:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle26
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle26:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle27
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle27:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle28
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle28:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle29
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle29:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle30
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle30:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle31
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle31:checked
+	+ label
+	.fa-play-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle32
+	+ label
+	.fa-pause-circle,
+.right-side
+	.playlist-section
+	.slot
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle32:checked
+	+ label
+	.fa-play-circle {
+	display: none;
+}
+/* ----------------Play-Pause Icon Checkbox Display None----------------- */
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle1,
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle2,
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle3,
+.latest-releases
+	.content
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle4,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle17,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle18,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle19,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle20,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle21,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle22,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle23,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle24,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle25,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle26,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle27,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle28,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle29,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle30,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle31,
+.right-side
+	.playlist-section
+	.image
+	input[type="checkbox"]
+	+ label
+	+ .playbar
+	.main-control
+	#playbar-play-toggle32 {
+	display: none;
+}

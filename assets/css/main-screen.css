@@ -1,0 +1,1073 @@
+/* ----------------Main Screen Container---------------- */
+.container {
+	height: 100%;
+	width: 100%;
+	/* min-width: max-content; */
+	max-width: 100%;
+	background: transparent;
+	z-index: 0;
+}
+/* ----------------Body Scrollbar & Right Side Component Scrollbar---------------- */
+.right-side::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	display: none;
+	overflow: hidden;
+}
+/* ----------------Left Side Component---------------- */
+.left-side {
+	width: 65%;
+	padding: 2%;
+	margin-left: 2%;
+	display: inline-block;
+	background: transparent;
+	z-index: 2;
+}
+/* ----------------Carousel---------------- */
+.carousel {
+	width: 100%;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	z-index: 5;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.carousel .image {
+	min-height: 180px;
+	max-width: 260px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0 1 33%;
+	border-radius: 10%;
+	transition: all 1s ease-in-out, transform 0.3s ease-in-out,
+		box-shadow 0.3s ease-in-out;
+}
+.carousel .image:nth-child(1) {
+	background-image: url("../images/carousel-img1.jpg");
+	z-index: 1;
+	filter: saturate(0.75);
+}
+.carousel .image:nth-child(2) {
+	background-image: url("../images/carousel-img2.jpg");
+	margin-left: 0.5%;
+	z-index: 2;
+	filter: saturate(0.8);
+}
+.carousel .image:nth-child(3) {
+	background-image: url("../images/carousel-img3.jpg");
+	margin-left: 0.5%;
+	z-index: 3;
+	filter: saturate(0.7);
+}
+.carousel .image:hover {
+	transform: scale(1.2);
+	box-shadow: 0px 0px 3px 3px var(--cyan);
+	cursor: pointer;
+	z-index: 10;
+}
+/* ----------------Latest Releases Section---------------- */
+.latest-releases {
+	width: 100%;
+	padding: 2%;
+}
+.latest-releases header > h3,
+.popular-artists header > h3,
+.latest-english-songs header > h3,
+.latest-hindi-songs header > h3 {
+	color: var(--white);
+}
+.latest-releases .content {
+	flex: 1 1 100%;
+	transition: all 0.3s ease-in-out;
+	flex-wrap: wrap;
+}
+.latest-releases .slot {
+	width: 50%;
+	min-height: 150px;
+	padding: 2%;
+}
+.latest-releases .slot .image {
+	min-width: 118px;
+	max-height: 118px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-width: 3px;
+	border-style: inset;
+	border-color: gray;
+	position: relative;
+	overflow: hidden;
+	flex: 0 1 33%;
+	transition: all 0.2s ease-in-out;
+}
+.latest-releases .slot:nth-child(1) .image {
+	background-image: url("../images/latest-release1.jpg");
+}
+.latest-releases .slot:nth-child(2) .image {
+	background-image: url("../images/latest-release2.jpg");
+}
+.latest-releases .slot:nth-child(3) .image {
+	background-image: url("../images/latest-release3.png");
+}
+.latest-releases .slot:nth-child(4) .image {
+	background-image: url("../images/latest-release4.jpg");
+}
+.latest-releases .about {
+	flex: 0 1 60%;
+	margin-left: 3%;
+	height: auto;
+}
+.latest-releases .title,
+.latest-releases .duration,
+.latest-releases .artist {
+	margin-top: 3%;
+	margin-left: 5%;
+	color: var(--white);
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+	word-spacing: 0.1rem;
+	overflow-wrap: break-word;
+}
+.latest-releases .artist {
+	color: gray;
+}
+/* ----------------Toggle All Play-Pause Icon on Song Images---------------- */
+.latest-releases .slot .image input[type="checkbox"]:nth-child(1),
+.latest-english-songs .content .song .image input[type="checkbox"]:nth-child(1),
+.latest-hindi-songs .content .song .image input[type="checkbox"]:nth-child(1),
+.right-side .slot .song .image input[type="checkbox"]:nth-child(1) {
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+.latest-releases .slot .image input[type="checkbox"]:nth-child(1) + label,
+.latest-english-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label,
+.latest-hindi-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label,
+.right-side .slot .song .image input[type="checkbox"]:nth-child(1) + label {
+	color: var(--white);
+	width: 100%;
+	height: 100%;
+}
+.latest-releases .slot .image .play,
+.latest-english-songs .content .song .image .play,
+.latest-hindi-songs .content .song .image .play,
+.right-side .slot .song .image .play {
+	background-color: black;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease-in;
+	position: absolute;
+	top: 0%;
+}
+.latest-releases
+	.slot
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label
+	> .play
+	.fa-play,
+.latest-english-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label
+	> .play
+	.fa-play,
+.latest-hindi-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label
+	> .play
+	.fa-play,
+.right-side
+	.slot
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label
+	> .play
+	.fa-play {
+	display: inline-block;
+}
+.latest-releases
+	.slot
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label
+	> .play
+	.fa-pause,
+.latest-english-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label
+	> .play
+	.fa-pause,
+.latest-hindi-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label
+	> .play
+	.fa-pause,
+.right-side
+	.slot
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1)
+	+ label
+	> .play
+	.fa-pause {
+	display: none;
+}
+.latest-releases
+	.slot
+	.image
+	input[type="checkbox"]:nth-child(1):checked
+	+ label
+	> .play
+	.fa-play,
+.latest-english-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1):checked
+	+ label
+	> .play
+	.fa-play,
+.latest-hindi-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1):checked
+	+ label
+	> .play
+	.fa-play,
+.right-side
+	.slot
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1):checked
+	+ label
+	> .play
+	.fa-play {
+	display: none;
+}
+.latest-releases
+	.slot
+	.image
+	input[type="checkbox"]:nth-child(1):checked
+	+ label
+	> .play
+	.fa-pause,
+.latest-english-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1):checked
+	+ label
+	> .play
+	.fa-pause,
+.latest-hindi-songs
+	.content
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1):checked
+	+ label
+	> .play
+	.fa-pause,
+.right-side
+	.slot
+	.song
+	.image
+	input[type="checkbox"]:nth-child(1):checked
+	+ label
+	> .play
+	.fa-pause {
+	display: inline-block;
+}
+.latest-releases .slot .image label > .play i,
+.latest-english-songs .content .song .image label > .play i,
+.latest-hindi-songs .content .song .image label > .play i,
+.right-side .slot .song .image label > .play i {
+	color: var(--white);
+	background-color: transparent;
+	visibility: hidden;
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 25%;
+	cursor: pointer;
+	filter: brightness(200%);
+	transition: all 0.38s linear;
+}
+.right-side .slot .song .image label > .play i {
+	font-size: 2rem;
+	padding-left: 5%;
+}
+.latest-releases .slot .image .play:hover,
+.latest-english-songs .content .song .image .play:hover,
+.latest-hindi-songs .content .song .image .play:hover,
+.right-side .slot .song .image .play:hover {
+	opacity: 0.6;
+}
+.latest-releases .slot .image .play:hover i,
+.latest-english-songs .content .song .image .play:hover i,
+.latest-hindi-songs .content .song .image .play:hover i,
+.right-side .slot .song .image .play:hover i {
+	visibility: visible;
+	transform: scale(1.05);
+}
+/* ----------------Toggle All Dropdown Menus---------------- */
+.latest-releases .options-container1,
+.latest-releases .options-container2,
+.latest-releases .options-container3,
+.latest-releases .options-container4,
+.right-side .playlist-header .options-container5 {
+	width: 100%;
+	margin-top: 10%;
+	position: relative;
+}
+.latest-releases .options-container1,
+.latest-releases .options-container1 .options-playlist {
+	z-index: 40;
+}
+.latest-releases .options-container2,
+.latest-releases .options-container2 .options-playlist {
+	z-index: 30;
+}
+.latest-releases .options-container3,
+.latest-releases .options-container3 .options-playlist {
+	z-index: 20;
+}
+.latest-releases .options-container4,
+.latest-releases .options-container4 .options-playlist {
+	z-index: 10;
+}
+.right-side .playlist-header .options-container5,
+.right-side .playlist-header .options-container5 .options-playlist {
+	z-index: 50;
+}
+.latest-releases .options-container1 #options-label,
+.latest-releases .options-container2 #options-label,
+.latest-releases .options-container3 #options-label,
+.latest-releases .options-container4 #options-label,
+.right-side .playlist-header .options-container5 #options-label {
+	cursor: pointer;
+}
+.latest-releases .options-container1 .options-playlist,
+.latest-releases .options-container2 .options-playlist,
+.latest-releases .options-container3 .options-playlist,
+.latest-releases .options-container4 .options-playlist,
+.right-side .playlist-header .options-container5 .options-playlist {
+	background-color: var(--cyan);
+	position: absolute;
+	display: none;
+	top: 1rem;
+	width: 13rem;
+	z-index: 10;
+	opacity: 0.9;
+	cursor: pointer;
+}
+.latest-releases .options-container1 .options-playlist a,
+.latest-releases .options-container2 .options-playlist a,
+.latest-releases .options-container3 .options-playlist a,
+.latest-releases .options-container4 .options-playlist a,
+.right-side .playlist-header .options-container5 .options-playlist a {
+	text-decoration: none;
+	color: black;
+	width: 100%;
+}
+.latest-releases .options-container1 .options-playlist li,
+.latest-releases .options-container2 .options-playlist li,
+.latest-releases .options-container3 .options-playlist li,
+.latest-releases .options-container4 .options-playlist li,
+.right-side .playlist-header .options-container5 .options-playlist li {
+	margin-left: 0%;
+	width: 100%;
+	list-style: none;
+	padding: 5%;
+}
+.latest-releases .options-container1 .options-playlist li:hover,
+.latest-releases .options-container2 .options-playlist li:hover,
+.latest-releases .options-container3 .options-playlist li:hover,
+.latest-releases .options-container4 .options-playlist li:hover,
+.right-side .playlist-header .options-container5 .options-playlist li:hover {
+	background-color: var(--white);
+}
+.latest-releases .options-container1 #options-checkbox1,
+.latest-releases .options-container2 #options-checkbox2,
+.latest-releases .options-container3 #options-checkbox3,
+.latest-releases .options-container4 #options-checkbox4,
+.right-side .playlist-header .options-container5 #options-checkbox5 {
+	display: none;
+}
+.latest-releases
+	.options-container1
+	#options-checkbox1:checked
+	~ .options-playlist,
+.latest-releases
+	.options-container2
+	#options-checkbox2:checked
+	~ .options-playlist,
+.latest-releases
+	.options-container3
+	#options-checkbox3:checked
+	~ .options-playlist,
+.latest-releases
+	.options-container4
+	#options-checkbox4:checked
+	~ .options-playlist,
+.right-side
+	.playlist-header
+	.options-container5
+	#options-checkbox5:checked
+	~ .options-playlist {
+	display: block;
+	user-select: none;
+	outline: none;
+}
+/* ----------------Popular Artists Section---------------- */
+.popular-artists {
+	width: 100%;
+	padding: 2%;
+}
+.popular-artists .artist-showcase {
+	width: 100%;
+	flex-wrap: wrap;
+	min-height: 150px;
+	padding-top: 2%;
+}
+.popular-artists .artist-showcase .artist {
+	flex: 0 1 15%;
+	transition: all 0.3s ease-in-out;
+	min-height: 150px;
+}
+.popular-artists .artist-showcase .artist .image {
+	width: 100%;
+	min-width: 115px;
+	max-height: 115px;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0px 0px 7px 1px var(--white);
+}
+.popular-artists .artist-showcase .artist p {
+	color: var(--white);
+}
+.popular-artists .artist-showcase .artist .image .play {
+	background-color: black;
+	opacity: 0;
+	width: 100%;
+	min-height: 110px;
+	transition: all 0.3s ease-in;
+	border-radius: 50%;
+}
+.popular-artists .artist-showcase .artist .image .play i {
+	color: var(--white);
+	background-color: transparent;
+	visibility: hidden;
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 23%;
+	padding-left: 8%;
+	cursor: pointer;
+	filter: brightness(200%);
+	transition: all 0.38s linear;
+	border-radius: 50%;
+}
+.popular-artists .artist-showcase .artist .image .play:hover {
+	opacity: 0.6;
+}
+.popular-artists .artist-showcase .artist .image .play:hover i {
+	visibility: visible;
+	transform: scale(1.05);
+}
+.popular-artists .artist-showcase .artist:nth-child(1) .image {
+	background-image: url("../images/artist1.jpg");
+}
+.popular-artists .artist-showcase .artist:nth-child(2) .image {
+	background-image: url("../images/artist2.jpeg");
+}
+.popular-artists .artist-showcase .artist:nth-child(3) .image {
+	background-image: url("../images/artist3.jpg");
+}
+.popular-artists .artist-showcase .artist:nth-child(4) .image {
+	background-image: url("../images/artist4.jpg");
+}
+.popular-artists .artist-showcase .artist:nth-child(5) .image {
+	background-image: url("../images/artist5.jpg");
+}
+.popular-artists .artist-showcase .artist:nth-child(6) .image {
+	background-image: url("../images/artist6.jpg");
+}
+/* ----------------Music Stations Section---------------- */
+.music-stations {
+	background-color: #101642;
+	width: 100%;
+	padding: 2%;
+	position: relative;
+}
+.music-stations .logo {
+	min-width: 100px;
+	max-height: 80px;
+	background-color: transparent;
+	position: relative;
+	transition: all 0.2s ease-in;
+	cursor: pointer;
+}
+.music-stations .logo:hover {
+	transform: scale(1.3);
+	filter: brightness(110%);
+}
+.music-stations .logo .layer1 {
+	width: 100%;
+	height: 60px;
+	background-color: #f6ba10;
+	z-index: 12;
+	box-shadow: 0px 0px 7px 1px #f6ba10;
+}
+.music-stations .logo .layer2 {
+	width: 80%;
+	height: 85px;
+	background-color: #f6ba10;
+	position: absolute;
+	z-index: 13;
+	box-shadow: 0px 0px 7px 1px #f6ba10;
+}
+.music-stations .logo .layer3 {
+	width: 60%;
+	height: 100px;
+	background-color: #ff5c10;
+	position: absolute;
+	z-index: 14;
+	box-shadow: 0px 0px 7px 1px #ff5c10;
+}
+.music-stations .logo .layer3 p {
+	text-align: center;
+	color: var(--white);
+	text-shadow: 2px 2px black;
+}
+.music-stations .station-container {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.music-stations .station {
+	flex: 0 1 13.5%;
+	transition: all 0.3s ease-in-out;
+	height: 90px;
+	min-width: 90px;
+	max-height: 90px;
+	margin-left: 2%;
+	z-index: 20;
+	border-radius: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.music-stations .station img {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	z-index: 25;
+}
+.music-stations .play {
+	background-color: black;
+	opacity: 0;
+	width: 100%;
+	min-height: 90px;
+	transition: all 0.3s ease-in;
+	border-radius: 100%;
+	position: absolute;
+	top: 0%;
+	z-index: 30;
+}
+.music-stations .station p {
+	color: var(--white);
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 900;
+	letter-spacing: 0.05rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 1.7rem;
+	text-shadow: 0px 0px var(--white);
+	position: absolute;
+	top: 35%;
+	z-index: 28;
+}
+.music-stations .station .play i {
+	color: var(--white);
+	background-color: transparent;
+	visibility: hidden;
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 23%;
+	padding-left: 8%;
+	cursor: pointer;
+	filter: brightness(200%);
+	transition: all 0.38s linear;
+	border-radius: 50%;
+}
+.music-stations .station .play:hover {
+	opacity: 0.6;
+}
+.music-stations .station .play:hover i {
+	visibility: visible;
+	transform: scale(1.05);
+}
+/* ----------------Mood Showcase Section---------------- */
+.mood-showcase {
+	width: 100%;
+	padding: 2%;
+	flex-wrap: wrap;
+}
+.mood-showcase .outer-div {
+	min-width: 240px;
+	transition: all 0.3s ease-in-out;
+	height: 150px;
+	min-height: 150px;
+	overflow: hidden;
+}
+.mood-showcase .outer-div:nth-child(1) > .mood {
+	background-image: url("../images/mood1.jpg");
+}
+.mood-showcase .outer-div:nth-child(2) > .mood {
+	background-image: url("../images/mood2.jpeg");
+}
+.mood-showcase .outer-div:nth-child(2) {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.mood-showcase .outer-div:nth-child(3) > .mood {
+	background-image: url("../images/mood3.jpeg");
+}
+.mood {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	transition: all 0.35s ease-in-out;
+	filter: brightness(105%);
+	position: relative;
+}
+.outer-div:hover .mood {
+	transform: scale(1.3);
+	filter: brightness(67.5%);
+	cursor: pointer;
+}
+.outer-div:hover .gradient {
+	transform: scale(1);
+	filter: brightness(100%);
+}
+.mood-showcase .mood p {
+	text-align: center;
+	vertical-align: middle;
+	color: var(--white);
+	border: 2px solid var(--text-color);
+	background-color: black;
+	opacity: 0.8;
+	box-shadow: 2px 3px 6px 2px var(--text-color);
+	font-size: 1.2rem;
+	font-weight: 900;
+	letter-spacing: 0.1rem;
+	overflow-wrap: break-word;
+	position: absolute;
+	top: 40%;
+	left: 28%;
+}
+.mood-showcase .outer-div:nth-child(2) > .mood p {
+	left: 15%;
+}
+.mood-showcase .outer-div:nth-child(1) > .mood p {
+	left: 40%;
+}
+.mood-showcase .mood .gradient {
+	background-color: #4158d0;
+	background-image: linear-gradient(
+		43deg,
+		#4158d0 0%,
+		#c850c0 46%,
+		#ffcc70 100%
+	);
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+}
+/* ----------------Latest English Songs Section---------------- */
+.latest-english-songs {
+	width: 100%;
+	padding: 2%;
+}
+.latest-english-songs .content {
+	flex-wrap: wrap;
+	padding: 2%;
+}
+.latest-english-songs .song {
+	flex: 0 1 15%;
+	min-height: 150px;
+	box-shadow: 0 0px 5px 2px rgba(255, 255, 255, 0.2);
+	transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+}
+.latest-english-songs .song:hover {
+	box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+}
+.latest-english-songs .song:nth-child(1) > .image {
+	background-image: url("../images/song1.jpg");
+}
+.latest-english-songs .song:nth-child(2) > .image {
+	background-image: url("../images/song2.jpeg");
+}
+.latest-english-songs .song:nth-child(3) > .image {
+	background-image: url("../images/song3.jpeg");
+}
+.latest-english-songs .song:nth-child(4) > .image {
+	background-image: url("../images/song4.jpg");
+}
+.latest-english-songs .song:nth-child(5) > .image {
+	background-image: url("../images/song5.jpeg");
+}
+.latest-english-songs .song:nth-child(6) > .image {
+	background-image: url("../images/song6.jpeg");
+}
+.latest-english-songs .song .image {
+	min-width: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 110px;
+	transition: all 0.2s ease-in-out;
+	border-radius: 5px 5px 0 0;
+}
+.latest-english-songs .image .play {
+	background-color: black;
+	opacity: 0;
+	width: 100%;
+	min-height: 110px;
+	transition: all 0.3s ease-in;
+}
+.latest-english-songs .image .play p {
+	color: var(--white);
+	background-color: transparent;
+	visibility: hidden;
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 20%;
+	cursor: pointer;
+	filter: brightness(200%);
+	transition: all 0.38s linear;
+}
+.latest-english-songs .image .play:hover {
+	opacity: 0.6;
+}
+.latest-english-songs .image .play:hover p {
+	visibility: visible;
+	transform: scale(1.05);
+}
+.latest-english-songs .song-name,
+.latest-english-songs .song-singer {
+	margin-top: 6%;
+	color: var(--white);
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+	word-spacing: 0.1rem;
+	overflow-wrap: break-word;
+}
+.latest-english-songs .song-singer {
+	color: gray;
+}
+/* ----------------Latest Hindi Songs Section---------------- */
+.latest-hindi-songs {
+	width: 100%;
+	padding: 2%;
+}
+.latest-hindi-songs .content {
+	flex-wrap: wrap;
+	padding: 2%;
+}
+.latest-hindi-songs .song {
+	flex: 0 1 15%;
+	min-height: 150px;
+	box-shadow: 0 0px 5px 2px rgba(255, 255, 255, 0.2);
+	transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+}
+.latest-hindi-songs .song:hover {
+	box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+}
+.latest-hindi-songs .song:nth-child(1) > .image {
+	background-image: url("../images/song1-hindi.jpg");
+}
+.latest-hindi-songs .song:nth-child(2) > .image {
+	background-image: url("../images/song2-hindi.jpg");
+}
+.latest-hindi-songs .song:nth-child(3) > .image {
+	background-image: url("../images/song3-hindi.jpg");
+}
+.latest-hindi-songs .song:nth-child(4) > .image {
+	background-image: url("../images/song4-hindi.jpg");
+}
+.latest-hindi-songs .song:nth-child(5) > .image {
+	background-image: url("../images/song5-hindi.jpg");
+}
+.latest-hindi-songs .song:nth-child(6) > .image {
+	background-image: url("../images/song6-hindi.jpg");
+}
+.latest-hindi-songs .song .image {
+	min-width: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 110px;
+	transition: all 0.2s ease-in-out;
+	border-radius: 5px 5px 0 0;
+}
+.latest-hindi-songs .image .play {
+	background-color: black;
+	opacity: 0;
+	width: 100%;
+	min-height: 110px;
+	transition: all 0.3s ease-in;
+}
+.latest-hindi-songs .image .play p {
+	color: var(--white);
+	background-color: transparent;
+	visibility: hidden;
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 20%;
+	cursor: pointer;
+	filter: brightness(200%);
+	transition: all 0.38s linear;
+}
+.latest-hindi-songs .image .play:hover {
+	opacity: 0.6;
+}
+.latest-hindi-songs .image .play:hover p {
+	visibility: visible;
+	transform: scale(1.05);
+}
+.latest-hindi-songs .song-name,
+.latest-hindi-songs .song-singer {
+	margin-top: 6%;
+	color: var(--white);
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+	word-spacing: 0.1rem;
+	overflow-wrap: break-word;
+}
+.latest-hindi-songs .song-singer {
+	color: gray;
+}
+/* ----------------Right Side Component---------------- */
+.right-side {
+	width: 30%;
+	padding: 2%;
+	margin-right: 2%;
+	display: inline-block;
+	vertical-align: top;
+	height: 530px;
+	background: transparent;
+	overflow: scroll;
+	z-index: 1;
+}
+.right-side .playlist-header {
+	width: 100%;
+}
+.right-side .playlist-header > h2 {
+	color: lightgray;
+}
+.right-side .playlist-header .options-container5 {
+	width: 60%;
+	margin: 0%;
+}
+.right-side .playlist-header .options-container5 p {
+	font-size: small;
+	color: lightpink;
+}
+/* ----------------Songs Playlist Section---------------- */
+.right-side .playlist-section {
+	flex: 1 1 100%;
+	transition: all 0.3s ease-in-out;
+	flex-wrap: wrap;
+	padding: 5%;
+	padding-left: 0%;
+	padding-right: 0%;
+	overflow: hidden;
+}
+/* ----------------Songs in the Playlist Section---------------- */
+.right-side .playlist-section .slot {
+	width: 100%;
+	transition: all 0.2s linear;
+	overflow: hidden;
+	overflow-wrap: break-word;
+	min-height: auto;
+}
+.right-side .playlist-section .slot:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+.right-side .playlist-section .slot .song {
+	width: 90%;
+	margin-left: 7%;
+}
+.right-side .playlist-section .slot > p {
+	color: lightgray;
+	margin-left: 7%;
+}
+.right-side .playlist-section .slot .image {
+	min-height: 70px;
+	min-width: 30%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out;
+}
+.right-side .playlist-section .slot:nth-child(1) .image {
+	background-image: url("../images/song1-hindi.jpg");
+	box-shadow: 0px 0px 12px -3px red;
+}
+.right-side .playlist-section .slot:nth-child(2) .image {
+	background-image: url("../images/song1.jpg");
+	box-shadow: 0px 0px 15px -1px #fbb428;
+}
+.right-side .playlist-section .slot:nth-child(3) .image {
+	background-image: url("../images/song2-hindi.jpg");
+	box-shadow: 0px 0px 15px 0px #3badc2;
+}
+.right-side .playlist-section .slot:nth-child(4) .image {
+	background-image: url("../images/song2.jpeg");
+	box-shadow: 0px 0px 15px -2px violet;
+}
+.right-side .playlist-section .slot:nth-child(5) .image {
+	background-image: url("../images/song3-hindi.jpg");
+	box-shadow: 0px 0px 15px -2px green;
+}
+.right-side .playlist-section .slot:nth-child(6) .image {
+	background-image: url("../images/song3.jpeg");
+	box-shadow: 0px 0px 15px -2px #e8d19b;
+}
+.right-side .playlist-section .slot:nth-child(7) .image {
+	background-image: url("../images/song4-hindi.jpg");
+	box-shadow: 0px 0px 15px -1px #f3b746;
+}
+.right-side .playlist-section .slot:nth-child(8) .image {
+	background-image: url("../images/song4.jpg");
+	box-shadow: 0px 0px 15px -2px #e8d19b;
+}
+.right-side .playlist-section .slot:nth-child(9) .image {
+	background-image: url("../images/song5-hindi.jpg");
+	box-shadow: 0px 0px 15px -3px #f5d3b8;
+}
+.right-side .playlist-section .slot:nth-child(10) .image {
+	background-image: url("../images/song5.jpeg");
+	box-shadow: 0px 0px 15px -1px #f4693e;
+}
+.right-side .playlist-section .slot:nth-child(11) .image {
+	background-image: url("../images/song6-hindi.jpg");
+	box-shadow: 0px 0px 15px -1px #f1cdcd;
+}
+.right-side .playlist-section .slot:nth-child(12) .image {
+	background-image: url("../images/song6.jpeg");
+	box-shadow: 0px 0px 15px -2px var(--white);
+}
+.right-side .playlist-section .slot:nth-child(13) .image {
+	background-image: url("../images/latest-release1.jpg");
+	box-shadow: 0px 0px 15px 0px black;
+}
+.right-side .playlist-section .slot:nth-child(14) .image {
+	background-image: url("../images/latest-release2.jpg");
+	box-shadow: 0px 0px 15px -1px blue;
+}
+.right-side .playlist-section .slot:nth-child(15) .image {
+	background-image: url("../images/latest-release3.png");
+	box-shadow: 0px 0px 15px -3px var(--white);
+}
+.right-side .playlist-section .slot:nth-child(16) .image {
+	background-image: url("../images/latest-release4.jpg");
+	box-shadow: 0px 0px 15px 0px cyan;
+}
+.right-side .playlist-section .slot .song .about {
+	flex: 0 1 60%;
+	height: 100px;
+	margin-right: 3%;
+}
+.right-side .playlist-section .slot .song .about i {
+	transition: all 0.1s linear;
+}
+.right-side .playlist-section .slot .song .about i:hover {
+	color: red;
+}
+.right-side .playlist-section .slot .song .about > p {
+	width: 100%;
+}
+.right-side .playlist-section .slot .song .about .title {
+	width: 70%;
+}
+.right-side .playlist-section .slot .song .about .duration {
+	width: 30%;
+}
+.right-side .playlist-section .slot .song .about .title,
+.right-side .playlist-section .slot .song .about .duration,
+.right-side .playlist-section .slot .song .about .artist {
+	color: var(--white);
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+	word-spacing: 0.1rem;
+	overflow-wrap: break-word;
+}
+.right-side .playlist-section .slot .song .about .artist {
+	width: 70%;
+	display: inline-block;
+	font-size: 0.7rem;
+	color: gray;
+}

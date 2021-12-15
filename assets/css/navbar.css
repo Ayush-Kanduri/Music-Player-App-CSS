@@ -1,0 +1,270 @@
+/* ------------Google Fonts------------ */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
+
+/* ------------Navbar------------ */
+.navbar {
+	padding: 1rem;
+	width: 100%;
+	height: auto;
+	background: transparent;
+	font-family: var(--font);
+	color: var(--white);
+	position: relative;
+}
+.first-div {
+	width: 50%;
+	padding-left: 1.5rem;
+	gap: 1rem;
+}
+.second-div {
+	width: 50%;
+	gap: 2rem;
+	transition: all 0.3s ease-in;
+	display: flex;
+	justify-content: flex-end;
+}
+/* ------------Logo------------ */
+.navbar .logo {
+	width: 80px;
+	min-width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px 0px var(--lightgray);
+	border: 2px solid var(--white);
+	background-image: url("../images/main-screen/logo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: box-shadow 0.3s linear, border 0.3s linear;
+}
+.navbar .logo:hover {
+	box-shadow: 0px 0px 5px 2px var(--cyan);
+	border: 2px solid var(--cyan);
+	animation: rotate 1.3s linear infinite;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(-360deg);
+	}
+}
+/* ------------Logo Header------------ */
+.navbar .company {
+	font-size: 1.5rem;
+	cursor: pointer;
+	font-family: "Sansita Swashed", cursive;
+}
+.navbar .company > * + * + * {
+	font-size: 1.9rem;
+}
+.navbar .company:hover {
+	color: var(--cyan);
+	animation: scale 0.6s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+@keyframes scale {
+	0% {
+		transform: scale(1.3);
+	}
+}
+/* ------------Favourites------------ */
+.navbar .favourites {
+	margin-left: 4rem;
+	font-size: 1.1rem;
+	font-family: "Ubuntu", sans-serif;
+	cursor: pointer;
+	letter-spacing: 0.1rem;
+}
+.navbar .favourites:hover {
+	animation: scale 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+	color: var(--cyan);
+}
+/* ------------Search Bar------------ */
+.navbar div.search {
+	transition: all 1s linear;
+}
+.navbar input {
+	width: 15rem;
+	padding: 5px;
+	padding-left: 15px;
+	font-size: 17px;
+	border-top: 2px solid var(--white);
+	border-bottom: 2px solid var(--white);
+	background-color: #12193e;
+	font-family: var(--font);
+	color: var(--white);
+	border-left: none;
+	border-right: none;
+}
+::placeholder {
+	vertical-align: center;
+	font-size: 18px;
+	letter-spacing: 0.01rem;
+	font-family: var(--font);
+}
+.navbar input:focus,
+.navbar .search-icon:focus,
+.navbar .mic-icon:focus {
+	outline: none;
+}
+.navbar .search-icon,
+.navbar .mic-icon {
+	font-size: 17px;
+	padding: 5px;
+	width: 15%;
+	background-color: #12193e;
+	cursor: pointer;
+	color: var(--white);
+	transition: all 0.2s ease-in;
+}
+.navbar .search-icon {
+	border-top: 2px solid var(--white);
+	border-bottom: 2px solid var(--white);
+	border-left: 2px solid var(--white);
+	border-right: none;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	padding-left: 8px;
+}
+.navbar .mic-icon {
+	border-top: 2px solid var(--white);
+	border-bottom: 2px solid var(--white);
+	border-right: 2px solid var(--white);
+	border-left: none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 4.5px;
+	padding-right: 10px;
+	font-size: 18px;
+}
+.navbar .search-icon:hover,
+.navbar .mic-icon:hover,
+.navbar .notification:hover {
+	color: var(--cyan);
+}
+/* ------------Notification Bell------------ */
+.navbar .bell-btn {
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.navbar .bell-btn:focus {
+	outline: none;
+}
+.navbar .notification {
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: initial;
+	transition: all 0.4s linear;
+	color: var(--white);
+}
+.navbar .bell-btn:hover {
+	animation: ring 0.4s linear infinite;
+}
+@keyframes ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-25deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(25deg);
+	}
+}
+/* ------------Profile Picture------------ */
+.navbar .profile-pic {
+	border-radius: 100%;
+	width: 3.5rem;
+	height: 3.5rem;
+	box-shadow: 0px 0px 5px 3px var(--lightgray);
+	cursor: pointer;
+	background-image: url("../images/main-screen/profile.jpg");
+	background-position: 0px -9px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navbar .profile-pic:hover {
+	background: none;
+	background: transparent;
+	transition: background-image 0.4s ease-in, background-color 0.4s ease-in;
+	background-color: rgb(255, 255, 255, 1);
+	background-image: url("../images/main-screen/tick.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* ------------Responsive Hamburger Menu------------ */
+.menu {
+	display: none;
+	width: 2.3rem;
+	height: 2.5rem;
+	cursor: pointer;
+	border-radius: 20%;
+	position: relative;
+	transition: all 1s linear;
+	user-select: none;
+	outline: none;
+}
+.menu #checkbox {
+	position: absolute;
+	top: 0%;
+	right: 10%;
+	width: 100px;
+	visibility: hidden;
+	user-select: none;
+	outline: none;
+}
+.menu #checkbox:focus {
+	outline: none;
+}
+.menu #checkbox-label {
+	position: absolute;
+	bottom: 3%;
+	cursor: pointer;
+	font-size: 2.1rem;
+	color: var(--white);
+	user-select: none;
+	outline: none;
+}
+.options {
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 39px;
+	right: 8px;
+	display: none;
+	background-color: var(--cyan);
+	opacity: 0.85;
+	text-align: center;
+	z-index: 100;
+}
+.menu .options li:first-child {
+	border-bottom: 1px solid black;
+}
+.menu .options li:last-child {
+	display: none;
+}
+.menu .options li {
+	list-style: none;
+	padding: 1rem;
+}
+.menu .options li:hover {
+	background-color: var(--white);
+}
+.menu .options a {
+	color: black;
+	text-decoration: none;
+}
+.menu #checkbox:checked ~ .options {
+	display: initial;
+	user-select: none;
+	outline: none;
+}
+input[type="checkbox"]:focus {
+	outline: 0;
+	user-select: none;
+}

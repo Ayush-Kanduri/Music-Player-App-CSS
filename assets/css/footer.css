@@ -1,0 +1,133 @@
+/* ------------Footer------------ */
+footer {
+	background: transparent;
+	width: 100%;
+	padding: 1%;
+}
+.line {
+	border-right: 2px solid var(--lightgray);
+}
+footer > div,
+footer > div > div,
+footer > div > div > div {
+	width: 100%;
+}
+/* --------Social Links-------- */
+footer .social {
+	color: var(--white);
+	padding: 2%;
+	width: 100%;
+	overflow-wrap: break-word;
+}
+footer .social i {
+	font-size: 2rem;
+	transition: all 0.18s ease-in-out;
+}
+footer .social i:nth-of-type(2) {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+footer .social i:hover {
+	color: red;
+	cursor: pointer;
+}
+/* --------Privacy Terms-------- */
+footer .privacy-terms {
+	padding: 2%;
+	width: 100%;
+	overflow-wrap: break-word;
+}
+footer .privacy-terms a {
+	text-decoration: none;
+	color: var(--lightgray);
+	margin-left: 2%;
+	transition: all 0.18s ease-in-out;
+}
+
+footer .privacy-terms a:hover {
+	color: red;
+}
+/* --------Contact-------- */
+footer .contact {
+	width: 100%;
+	padding: 2%;
+}
+footer .contact p {
+	color: var(--white);
+	width: max-content;
+	overflow-wrap: break-word;
+}
+footer .contact input#email {
+	padding: 3%;
+	padding-left: 0.8rem;
+	padding-bottom: 2%;
+	font-size: 0.9rem;
+	color: var(--white);
+	outline: none;
+	width: 100%;
+	background: transparent;
+	border: 1px solid var(--lightgray);
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	margin-top: 6%;
+	border-right-color: transparent;
+}
+footer .contact input#email::placeholder {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: var(--lightgray);
+	font-size: 0.9rem;
+}
+footer .contact input#submit {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: var(--lightgray);
+	background: transparent;
+	border: 1px solid var(--lightgray);
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	outline: none;
+	width: 100%;
+	padding: 3%;
+	padding-top: 6%;
+	padding-bottom: 6%;
+	text-align: center;
+	margin-left: -1.5px;
+	font-size: 0.9rem;
+	margin-top: 15%;
+	vertical-align: baseline;
+	display: inline-block;
+}
+footer .contact input#email:focus,
+footer .contact input#submit:focus {
+	outline: none;
+}
+footer .contact input#submit:hover {
+	background-color: var(--cyan);
+	color: black;
+	cursor: pointer;
+}
+footer .contact input#subscribe {
+	margin-top: 7%;
+}
+footer .contact input#subscribe + label {
+	color: var(--lightgray);
+}
+/* --------Copyright-------- */
+footer .copyright-logo {
+	width: 100%;
+}
+
+footer .copyright-logo {
+	padding: 1%;
+	margin-top: 1%;
+	overflow-wrap: break-word;
+}
+footer .copyright-logo img {
+	width: 30px;
+	height: 30px;
+}
+footer .copyright-logo img + p,
+footer .copyright-logo img + p + p {
+	color: var(--lightgray);
+	margin-left: 1%;
+	overflow-wrap: break-word;
+}

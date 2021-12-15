@@ -1,0 +1,67 @@
+/* ------------Google Fonts------------ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+/* ------------General Styling------------ */
+:root {
+	--white: white;
+	--bgcolor: #0c1027;
+	--cyan: aqua;
+	--font: "Ubuntu", sans-serif;
+	--lightgray: lightgray;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+body {
+	overflow: scroll;
+	background-color: var(--bgcolor);
+	background-image: url("../images/bg.jpg");
+	background-blend-mode: overlay;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.mt-3 {
+	margin-top: 3%;
+}
+.flex {
+	display: flex;
+}
+.row {
+	flex-direction: row;
+}
+.col {
+	flex-direction: column;
+}
+.jc-s {
+	justify-content: flex-start;
+}
+.jc-e {
+	justify-content: flex-end;
+}
+.jc-c {
+	justify-content: center;
+}
+.jc-sb {
+	justify-content: space-between;
+}
+.jc-sa {
+	justify-content: space-around;
+}
+.ai-s {
+	align-items: flex-start;
+}
+.ai-e {
+	align-items: flex-end;
+}
+.ai-c {
+	align-items: center;
+}
+.font {
+	font-family: var(--font);
+}

@@ -1,0 +1,2251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Music Player</title>
+		<script
+			src="https://kit.fontawesome.com/c3cf4991a5.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="shortcut icon"
+			href="../assets/images/main-screen/logo.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="../assets/css/general.css" />
+		<link rel="stylesheet" href="../assets/css/main-screen.css" />
+		<link rel="stylesheet" href="../assets/css/navbar.css" />
+		<link rel="stylesheet" href="../assets/css/footer.css" />
+		<link rel="stylesheet" href="../assets/css/mediaQuery-mainScreen.css" />
+		<link rel="stylesheet" href="../assets/css/playbar.css" />
+	</head>
+	<body>
+		<!-- Main Container Start -->
+		<div class="container">
+			<!-- Navbar Start -->
+			<nav class="navbar flex row jc-s ai-c">
+				<div class="first-div flex row jc-s ai-c">
+					<!-- Logo -->
+					<div class="logo"></div>
+					<h3 class="company">
+						<strong>Ninja</strong>
+						<br />
+						<strong>Studio</strong>
+					</h3>
+					<!-- Favourites -->
+				<p class="favourites">Favourites</p>
+				</div>
+				<div class="second-div flex row jc-c ai-c">
+					<!-- Search Bar -->
+					<div class="search flex row jc-c ai-c">
+						<button class="search-icon"><i class="fas fa-search"></i></button>
+						<input type="text" class="search" placeholder="Search..." />
+						<button class="mic-icon"><i class="fas fa-microphone"></i></button>
+					</div>
+					<!-- Notifications -->
+					<button class="bell-btn"><i class="fas fa-bell notification"></i></button>
+					<!-- Profile Pic -->
+					<div class="profile-pic"></div>
+					<!-- Responsive Hamburger Menu -->
+					<div class="menu">
+						<input type="checkbox" name="checkbox" id="checkbox" />
+						<label for="checkbox" id="checkbox-label">&#9776;</label>
+						<ul class="options">
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Notifications</a></li>
+							<li><a href="#">Search</a></li>
+						</ul>
+				</div>
+				</div>
+			</nav>
+			<!-- Navbar End -->
+			<!-- Left Side Component Start -->
+			<main class="left-side flex col mt-3">
+				<!-- Carousel -->
+				<section class="carousel flex row jc-c ai-c">
+					<!-- Image1 -->
+					<div class="image img1"></div>
+					<!-- Image2 -->
+					<div class="image img2"></div>
+					<!-- Image3 -->
+					<div class="image img3"></div>
+				</section>
+				<!-- Latest Releases Section -->
+				<section class="latest-releases flex col mt-3">
+					<!-- Header -->
+					<header>
+						<h3 class="font">Latest Releases</h3>
+					</header>
+					<!-- Songs Display -->
+					<div class="content mt-3 flex row">
+						<!-- Song1 -->
+						<div class="slot flex row">
+							<!-- Image -->
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle1"
+									name="play-toggle1"
+								/>
+								<label for="play-toggle1">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">The Way I Am</p>
+											<p class="font">Eminem</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle1" name="playbar-play-toggle1" />
+											<label for="playbar-play-toggle1">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<!-- About -->
+							<div class="about">
+								<!-- Dropdown Menu -->
+								<div class="options-container1 flex jc-e ai-c">
+									<input
+										type="checkbox"
+										name="options-checkbox1"
+										id="options-checkbox1"
+									/>
+									<label for="options-checkbox1" id="options-label">
+										<i
+											style="color: white"
+											class="fas fa-ellipsis-h"
+										></i>
+									</label>
+									<ul class="options-playlist font">
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-play"
+												></i>
+												&nbsp;&nbsp; Play Now
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-plus"
+												></i>
+												&nbsp;&nbsp; Add To Queue
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-heart"
+												></i>
+												&nbsp;&nbsp; Add To Favourites
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-info-circle"
+												></i>
+												&nbsp;&nbsp; Get Info
+											</a>
+										</li>
+									</ul>
+								</div>
+								<p class="flex row jc-sb">
+									<span class="title font">The Way I Am</span>
+									<span class="duration font">4:50</span>
+								</p>
+								<p>
+									<span class="artist font">Eminem</span>
+								</p>
+							</div>
+						</div>
+						<!-- Song2 -->
+						<div class="slot flex row">
+							<!-- Image -->
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle2"
+									name="play-toggle2"
+								/>
+								<label for="play-toggle2">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Not Afraid</p>
+											<p class="font">Eminem</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle2" name="playbar-play-toggle2" />
+											<label for="playbar-play-toggle2">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:08</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<!-- About -->
+							<div class="about">
+								<!-- Dropdown Menu -->
+								<div class="options-container2 flex jc-e ai-c">
+									<input
+										type="checkbox"
+										name="options-checkbox2"
+										id="options-checkbox2"
+									/>
+									<label for="options-checkbox2" id="options-label">
+										<i
+											style="color: white"
+											class="fas fa-ellipsis-h"
+										></i>
+									</label>
+									<ul class="options-playlist font">
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-play"
+												></i>
+												&nbsp;&nbsp; Play Now
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-plus"
+												></i>
+												&nbsp;&nbsp; Add To Queue
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-heart"
+												></i>
+												&nbsp;&nbsp; Add To Favourites
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-info-circle"
+												></i>
+												&nbsp;&nbsp; Get Info
+											</a>
+										</li>
+									</ul>
+								</div>
+								<p class="flex row jc-sb">
+									<span class="title font">Not Afraid</span>
+									<span class="duration font">4:08</span>
+								</p>
+								<p>
+									<span class="artist font">Eminem</span>
+								</p>
+							</div>
+						</div>
+						<!-- Song3 -->
+						<div class="slot flex row">
+							<!-- Image -->
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle3"
+									name="play-toggle3"
+								/>
+								<label for="play-toggle3">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">My Name Is</p>
+											<p class="font">Eminem</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle3" name="playbar-play-toggle3" />
+											<label for="playbar-play-toggle3">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:28</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<!-- About -->
+							<div class="about">
+								<!-- Dropdown Menu -->
+								<div class="options-container3 flex jc-e ai-c">
+									<input
+										type="checkbox"
+										name="options-checkbox3"
+										id="options-checkbox3"
+									/>
+									<label for="options-checkbox3" id="options-label">
+										<i
+											style="color: white"
+											class="fas fa-ellipsis-h"
+										></i>
+									</label>
+									<ul class="options-playlist font">
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-play"
+												></i>
+												&nbsp;&nbsp; Play Now
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-plus"
+												></i>
+												&nbsp;&nbsp; Add To Queue
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-heart"
+												></i>
+												&nbsp;&nbsp; Add To Favourites
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-info-circle"
+												></i>
+												&nbsp;&nbsp; Get Info
+											</a>
+										</li>
+									</ul>
+								</div>
+								<p class="flex row jc-sb">
+									<span class="title font">My Name Is</span>
+									<span class="duration font">4:28</span>
+								</p>
+								<p>
+									<span class="artist font">Eminem</span>
+								</p>
+							</div>
+						</div>
+						<!-- Song4 -->
+						<div class="slot flex row">
+							<!-- Image -->
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle4"
+									name="play-toggle4"
+								/>
+								<label for="play-toggle4">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">No Love</p>
+											<p class="font">Eminem</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle4" name="playbar-play-toggle4" />
+											<label for="playbar-play-toggle4">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:59</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<!-- About -->
+							<div class="about">
+								<!-- Dropdown Menu -->
+								<div class="options-container4 flex jc-e ai-c">
+									<input
+										type="checkbox"
+										name="options-checkbox4"
+										id="options-checkbox4"
+									/>
+									<label for="options-checkbox4" id="options-label">
+										<i
+											style="color: white"
+											class="fas fa-ellipsis-h"
+										></i>
+									</label>
+									<ul class="options-playlist font">
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-play"
+												></i>
+												&nbsp;&nbsp; Play Now
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-plus"
+												></i>
+												&nbsp;&nbsp; Add To Queue
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-heart"
+												></i>
+												&nbsp;&nbsp; Add To Favourites
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												&nbsp;&nbsp;
+												<i
+													style="color: black"
+													class="fas fa-info-circle"
+												></i>
+												&nbsp;&nbsp; Get Info
+											</a>
+										</li>
+									</ul>
+								</div>
+								<p class="flex row jc-sb">
+									<span class="title font">No Love</span>
+									<span class="duration font">4:59</span>
+								</p>
+								<p>
+									<span class="artist font">Eminem</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Popular Artists Section -->
+				<section class="popular-artists flex col mt-3">
+					<!-- Header -->
+					<header><h3 class="font">Popular Artists</h3></header>
+					<!-- Artist Display -->
+					<div class="artist-showcase mt-3 flex row jc-sb ai-c">
+						<!-- Artist1 -->
+						<div class="artist flex col jc-sb ai-c">
+							<div class="image">
+								<a href="SinglePlaylistScreen.html">
+									<div class="play">
+										<i class="fas fa-play"></i>
+									</div>
+								</a>
+							</div>
+							<p class="name font">Ed Sheeran</p>
+						</div>
+						<!-- Artist2 -->
+						<div class="artist flex col jc-sb ai-c">
+							<div class="image">
+								<a href="SinglePlaylistScreen.html">
+									<div class="play">
+										<i class="fas fa-play"></i>
+									</div>
+								</a>
+							</div>
+							<p class="name font">Coldplay</p>
+						</div>
+						<!-- Artist3 -->
+						<div class="artist flex col jc-sb ai-c">
+							<div class="image">
+								<a href="SinglePlaylistScreen.html">
+									<div class="play">
+										<i class="fas fa-play"></i>
+									</div>
+								</a>
+							</div>
+							<p class="name font">Bruno Mars</p>
+						</div>
+						<!-- Artist4 -->
+						<div class="artist flex col jc-sb ai-c">
+							<div class="image">
+								<a href="SinglePlaylistScreen.html">
+									<div class="play">
+										<i class="fas fa-play"></i>
+									</div>
+								</a>
+							</div>
+							<p class="name font">Maroon 5</p>
+						</div>
+						<!-- Artist5 -->
+						<div class="artist flex col jc-sb ai-c">
+							<div class="image">
+								<a href="SinglePlaylistScreen.html">
+									<div class="play">
+										<i class="fas fa-play"></i>
+									</div>
+								</a>
+							</div>
+							<p class="name font">Zayn Malik</p>
+						</div>
+						<!-- Artist6 -->
+						<div class="artist flex col jc-sb ai-c">
+							<div class="image">
+								<a href="SinglePlaylistScreen.html">
+									<div class="play">
+										<i class="fas fa-play"></i>
+									</div>
+								</a>
+							</div>
+							<p class="name font">Charlie Puth</p>
+						</div>
+					</div>
+				</section>
+				<!-- Music Stations Section -->
+				<section class="music-stations mt-3 flex row">
+					<!-- Music Station Logo -->
+					<div class="logo flex jc-c ai-c">
+						<div class="layer1"></div>
+						<div class="layer2"></div>
+						<div class="layer3 flex jc-c ai-c">
+							<p class="font">Music Station</p>
+						</div>
+					</div>
+					<!-- Station Display -->
+					<div class="station-container flex row jc-c ai-c">
+						<!-- Station1 -->
+						<div class="station">
+							<img
+								src="../assets/images/station1.jpeg"
+								alt="station1"
+								srcset=""
+							/>
+							<p class="font">Love</p>
+							<div class="play">
+								<i class="fas fa-play"></i>
+							</div>
+						</div>
+						<!-- Station2 -->
+						<div class="station">
+							<img
+								src="../assets/images/station2.jpg"
+								alt="station2"
+								srcset=""
+							/>
+							<p class="font">Retro</p>
+							<div class="play"><i class="fas fa-play"></i></div>
+						</div>
+						<!-- Station3 -->
+						<div class="station">
+							<img
+								src="../assets/images/station3.jpeg"
+								alt="station3"
+								srcset=""
+							/>
+							<p class="font">Chill</p>
+							<div class="play"><i class="fas fa-play"></i></div>
+						</div>
+						<!-- Station4 -->
+						<div class="station">
+							<img
+								src="../assets/images/station4.jpeg"
+								alt="station4"
+								srcset=""
+							/>
+							<p class="font">Workout</p>
+							<div class="play"><i class="fas fa-play"></i></div>
+						</div>
+						<!-- Station5 -->
+						<div class="station">
+							<img
+								src="../assets/images/station5.jpeg"
+								alt="station5"
+								srcset=""
+							/>
+							<p class="font">Rock</p>
+							<div class="play"><i class="fas fa-play"></i></div>
+						</div>
+						<!-- Station6 -->
+						<div class="station">
+							<img
+								src="../assets/images/station6.jpeg"
+								alt="station6"
+								srcset=""
+							/>
+							<p class="font">Pop</p>
+							<div class="play"><i class="fas fa-play"></i></div>
+						</div>
+					</div>
+				</section>
+				<!-- Mood Showcase Section -->
+				<section class="mood-showcase mt-3 flex row jc-c ai-c">
+					<!-- Mood1 -->
+					<div class="outer-div">
+						<div class="mood">
+							<div class="gradient flex row jc-c ai-c"></div>
+							<p class="font">Party</p>
+						</div>
+					</div>
+					<!-- Mood2 -->
+					<div class="outer-div">
+						<div class="mood">
+							<div class="gradient flex row jc-c ai-c"></div>
+							<p class="font">Electronic Music</p>
+						</div>
+					</div>
+					<!-- Mood3 -->
+					<div class="outer-div">
+						<div class="mood">
+							<div class="gradient flex row jc-c ai-c"></div>
+							<p class="font">Road Trip</p>
+						</div>
+					</div>
+				</section>
+				<!-- Latest English Songs Section -->
+				<section class="latest-english-songs flex col mt-3">
+					<!-- Header -->
+					<header>
+						<h3 class="font">Latest English</h3>
+					</header>
+					<!-- Songs Display -->
+					<div class="content mt-3 flex row jc-sb ai-c">
+						<!-- Song1 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle5"
+									name="play-toggle5"
+								/>
+								<label for="play-toggle5">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Hey Boy</b></h4>
+							<p class="song-singer font">Sia</p>
+						</div>
+						<!-- Song2 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle6"
+									name="play-toggle6"
+								/>
+								<label for="play-toggle6">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Girls Like Us</b></h4>
+							<p class="song-singer font">Zoe Wees</p>
+						</div>
+						<!-- Song3 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle7"
+									name="play-toggle7"
+								/>
+								<label for="play-toggle7">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Anyone</b></h4>
+							<p class="song-singer font">Justin Bieber</p>
+						</div>
+						<!-- Song4 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle8"
+									name="play-toggle8"
+								/>
+								<label for="play-toggle8">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Holy</b></h4>
+							<p class="song-singer font">Justin Bieber</p>
+						</div>
+						<!-- Song5 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle9"
+									name="play-toggle9"
+								/>
+								<label for="play-toggle9">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>My Heart</b></h4>
+							<p class="song-singer font">Ava Max</p>
+						</div>
+						<!-- Song6 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle10"
+									name="play-toggle10"
+								/>
+								<label for="play-toggle10">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Line By Line</b></h4>
+							<p class="song-singer font">JP Saxe</p>
+						</div>
+					</div>
+				</section>
+				<!-- Latest Hindi Songs Section -->
+				<section class="latest-hindi-songs flex col mt-3">
+					<!-- Header -->
+					<header>
+						<h3 class="font">Latest Hindi</h3>
+					</header>
+					<!-- Songs Display -->
+					<div class="content mt-3 flex row jc-sb ai-c">
+						<!-- Song1 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle11"
+									name="play-toggle11"
+								/>
+								<label for="play-toggle11">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Saiyaan Ji</b></h4>
+							<p class="song-singer font">Honey Singh</p>
+						</div>
+						<!-- Song2 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle12"
+									name="play-toggle12"
+								/>
+								<label for="play-toggle12">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Mushkil Badi</b></h4>
+							<p class="song-singer font">Gajendra</p>
+						</div>
+						<!-- Song3 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle13"
+									name="play-toggle13"
+								/>
+								<label for="play-toggle13">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Yaariaan</b></h4>
+							<p class="song-singer font">Neha Kakkar</p>
+						</div>
+						<!-- Song4 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle14"
+									name="play-toggle14"
+								/>
+								<label for="play-toggle14">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Bhula Doon</b></h4>
+							<p class="song-singer font">Jubin Nautiyal</p>
+						</div>
+						<!-- Song5 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle15"
+									name="play-toggle15"
+								/>
+								<label for="play-toggle15">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Satane Lage</b></h4>
+							<p class="song-singer font">Sherpal</p>
+						</div>
+						<!-- Song6 -->
+						<div class="song flex col jc-c ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle16"
+									name="play-toggle16"
+								/>
+								<label for="play-toggle16">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+							</div>
+							<h4 class="song-name font"><b>Valentine</b></h4>
+							<p class="song-singer font">Aksh</p>
+						</div>
+					</div>
+				</section>
+			</main>
+			<!-- Left Side Component End -->
+			<!-- Right Side Component Start -->
+			<aside class="right-side flex col mt-3">
+				<!-- Header -->
+				<header class="playlist-header font flex row jc-sb ai-c">
+					<h2>Queue</h3>
+						<!-- Dropdown Menu -->
+						<div class="options-container5 flex jc-e ai-c">
+									<input
+										type="checkbox"
+										name="options-checkbox5"
+										id="options-checkbox5"
+									/>
+									<label for="options-checkbox5" id="options-label">
+										<p>
+											Queue &nbsp;&nbsp;&nbsp;&nbsp;
+											<i class="fas fa-chevron-down"></i>
+										</p>
+									</label>
+									<ul class="options-playlist font">
+										<li>
+											<a href="SinglePlaylistScreen.html">
+												Playlists
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												Favourite Songs
+											</a>
+										</li>
+									</ul>
+							</div>
+				</header>
+				<!-- Songs Playlist Display Section -->
+				<section class="playlist-section flex col jc-c ai-c">
+					<!-- Song1 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">01</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle17"
+									name="play-toggle17"
+								/>
+								<label for="play-toggle17">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Saiyaan Ji</p>
+											<p class="font">Honey Singh</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle17" name="playbar-play-toggle17" />
+											<label for="playbar-play-toggle17">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Saiyaan Ji</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Honey Singh</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song2 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">02</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle18"
+									name="play-toggle18"
+								/>
+								<label for="play-toggle18">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Hey Boy</p>
+											<p class="font">Sia</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle18" name="playbar-play-toggle18" />
+											<label for="playbar-play-toggle18">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Hey Boy</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Sia</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song3 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">03</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle19"
+									name="play-toggle19"
+								/>
+								<label for="play-toggle19">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Mushkil Badi</p>
+											<p class="font">Gajendra</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle19" name="playbar-play-toggle19" />
+											<label for="playbar-play-toggle19">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Mushkil Badi</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Gajendra</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song4 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">04</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle20"
+									name="play-toggle20"
+								/>
+								<label for="play-toggle20">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Girls Like Us</p>
+											<p class="font">Zoe Wees</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle20" name="playbar-play-toggle20" />
+											<label for="playbar-play-toggle20">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Girls Like Us</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Zoe Wees</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song5 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">05</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle21"
+									name="play-toggle21"
+								/>
+								<label for="play-toggle21">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Yaariyaan</p>
+											<p class="font">Neha Kakkar</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle21" name="playbar-play-toggle21" />
+											<label for="playbar-play-toggle21">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Yaariyaan</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Neha Kakkar</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song6 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">06</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle22"
+									name="play-toggle22"
+								/>
+								<label for="play-toggle22">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Anyone</p>
+											<p class="font">Justin Bieber</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle22" name="playbar-play-toggle22" />
+											<label for="playbar-play-toggle22">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Anyone</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Justin Bieber</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song7 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">07</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle23"
+									name="play-toggle23"
+								/>
+								<label for="play-toggle23">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Bhula Doon</p>
+											<p class="font">Jubin Nautiyal</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle23" name="playbar-play-toggle23" />
+											<label for="playbar-play-toggle23">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Bhula Doon</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Jubin Nautiyal</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song8 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">08</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle24"
+									name="play-toggle24"
+								/>
+								<label for="play-toggle24">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Holy</p>
+											<p class="font">Justin Bieber</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle24" name="playbar-play-toggle24" />
+											<label for="playbar-play-toggle24">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Holy</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Justin Bieber</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song9 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">09</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle25"
+									name="play-toggle25"
+								/>
+								<label for="play-toggle25">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Satane Lage</p>
+											<p class="font">Sherpal</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle25" name="playbar-play-toggle25" />
+											<label for="playbar-play-toggle25">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Satane Lage</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Sherpal</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song10 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">10</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle26"
+									name="play-toggle26"
+								/>
+								<label for="play-toggle26">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">My Head Heart</p>
+											<p class="font">Ava Max</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle26" name="playbar-play-toggle26" />
+											<label for="playbar-play-toggle26">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">My Head Heart</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Ava Max</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song11 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">11</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle27"
+									name="play-toggle27"
+								/>
+								<label for="play-toggle27">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Valentine</p>
+											<p class="font">Aksh</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle27" name="playbar-play-toggle27" />
+											<label for="playbar-play-toggle27">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Valentine</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Aksh</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song12 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">12</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle28"
+									name="play-toggle28"
+								/>
+								<label for="play-toggle28">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Line By Line</p>
+											<p class="font">JP Saxe</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle28" name="playbar-play-toggle28" />
+											<label for="playbar-play-toggle28">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Line By Line</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">JP Saxe</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song13 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">13</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle29"
+									name="play-toggle29"
+								/>
+								<label for="play-toggle29">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">The Way I Am</p>
+											<p class="font">Eminem</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle29" name="playbar-play-toggle29" />
+											<label for="playbar-play-toggle29">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">The Way I Am</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Eminem</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song14 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">14</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle30"
+									name="play-toggle30"
+								/>
+								<label for="play-toggle30">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">Not Afraid</p>
+											<p class="font">Eminem</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle30" name="playbar-play-toggle30" />
+											<label for="playbar-play-toggle30">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">Not Afraid</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Eminem</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song15 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">15</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle31"
+									name="play-toggle31"
+								/>
+								<label for="play-toggle31">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">My Name Is</p>
+											<p class="font">Eminem</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle31" name="playbar-play-toggle31" />
+											<label for="playbar-play-toggle31">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">My Name Is</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Eminem</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Song16 -->
+					<div class="slot flex row jc-sb ai-c">
+						<p class="font flex jc-c ai-c">16</p>
+						<div class="song flex row jc-sb ai-c">
+							<div class="image">
+								<input
+									type="checkbox"
+									id="play-toggle32"
+									name="play-toggle32"
+								/>
+								<label for="play-toggle32">
+									<div class="play">
+										<i class="fas fa-play"></i>
+										<i class="fas fa-pause"></i>
+									</div>
+								</label>
+								<!-- -------Playbar Start------- -->
+								<div class="playbar flex row">
+									<div class="album flex row jc-sa ai-c">
+										<div class="album-image"></div>
+										<div class="album-info">
+											<p class="font">No Love</p>
+											<p class="font">Eminem</p>
+										</div>
+										<div class="album-like flex row jc-sa ai-s">
+											<i class="far fa-heart"></i>
+											<i class="fas fa-ban"></i>
+										</div>
+									</div>
+									<div class="main-control flex col jc-c ai-c">
+										<div class="top flex row jc-sa ai-c">
+											<i class="fas fa-random"></i>
+											<i class="fas fa-step-backward"></i>
+											<input type="text" style="display: none;">
+											<input type="checkbox" id="playbar-play-toggle32" name="playbar-play-toggle32" />
+											<label for="playbar-play-toggle32">
+												<i class="far fa-play-circle"></i>
+												<i class="far fa-pause-circle"></i>
+											</label>
+											<i class="fas fa-step-forward"></i>
+											<i class="fas fa-redo"></i>
+										</div>
+										<div class="bottom flex row jc-c ai-c">
+											<span class="font">2:30</span>	
+											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<span class="font">4:50</span>
+										</div>
+									</div>
+									<div class="side-control flex row jc-sb ai-c">
+										<i class="fas fa-bars"></i>
+										<i class="fas fa-laptop-house"></i>
+										<i class="fas fa-volume-up"></i>
+										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<i class="fas fa-expand-alt"></i>
+									</div>
+								</div>
+								<!-- -------Playbar End--------- -->
+							</div>
+							<div class="about flex col jc-c ai-c">
+								<p class="flex row jc-sb">
+									<span class="title font">No Love</span>
+									<span class="duration font flex ai-c jc-e">		
+									<i class="far fa-heart"></i>
+									</span>
+								</p>
+								<p>
+									<span class="artist font">Eminem</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</aside>
+			<!-- Right Side Component End -->
+			<!-- Footer Start -->
+			<footer>
+				<div class="one flex col jc-c ai-c">
+					<div class="two flex row jc-c ai-c">
+						<div class="line flex col jc-c ai-c">
+							<!-- Social Links -->
+							<div class="social flex row jc-c ai-c">
+								<i class="fab fa-instagram"></i>
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-twitter-square"></i>
+							</div>
+							<!-- Privacy Terms -->
+							<div class="privacy-terms flex row jc-c ai-c">
+								<a href="#">Privacy Policy</a>
+								<a href="#">Terms & Conditions</a>
+							</div>
+						</div>
+						<!-- Contact -->
+						<div class="contact flex col jc-c ai-c">
+							<form
+								action=""
+								method="POST"
+								class="flex jc-c ai-c"
+								style="width: 100%"
+							>
+								<table>
+									<tr>
+										<td colspan="2">
+											<p class="font">
+												Get Personalized Music Recommendations
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="1">
+											<input
+												type="email"
+												name="email"
+												id="email"
+												placeholder="Email Address"
+												required
+											/>
+										</td>
+										<td colspan="1">
+											<input
+												type="submit"
+												value="Subscribe"
+												id="submit"
+											/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<input
+												class="font"
+												type="checkbox"
+												name="subscribe"
+												id="subscribe"
+												required
+											/>
+											<label for="subscribe" class="font"
+												>By checking the box, you agree with the<br />Terms
+												& Conditions ~ Privacy Policy</label
+											>
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+					<!-- Copyright Logo -->
+					<div class="copyright-logo flex row jc-c ai-c">
+						<img
+							src="../assets/images/music player logo.png"
+							alt="Company Logo"
+						/>
+						<p>Made with &#10084; in INDIA</p>
+						<p>&#169; 2021 Ninja Studio, Inc. All Rights Reserved.</p>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer End -->
+		</div>
+		<!-- Main Container End -->
+	</body>
+</html>

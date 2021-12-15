@@ -1,0 +1,298 @@
+/* --------------------------------1308px-------------------------------- */
+@media only screen and (max-width: 1308px) {
+	.mood-showcase .outer-div {
+		margin-top: 5%;
+		transition: all 0.4s linear;
+	}
+}
+/* --------------------------------1219px-------------------------------- */
+@media only screen and (max-width: 1219px) {
+	.music-stations .station {
+		margin-top: 5%;
+		transition: all 0.4s linear;
+	}
+	.music-stations .logo {
+		margin-top: 5%;
+		transition: all 0.4s linear;
+	}
+}
+/* --------------------------------1178px-------------------------------- */
+@media only screen and (max-width: 1178px) {
+	.popular-artists .artist-showcase {
+		padding-top: 0%;
+		transition: all 0.4s linear;
+	}
+	.popular-artists .artist-showcase .artist {
+		margin-top: 5%;
+		transition: all 0.4s linear;
+	}
+	.carousel .image {
+		min-height: 150px;
+	}
+}
+/* --------------------------------1067px-------------------------------- */
+@media only screen and (max-width: 1067px) {
+	.latest-english-songs .song {
+		margin-top: 5%;
+		transition: all 0.4s linear;
+	}
+	.latest-hindi-songs .song {
+		margin-top: 5%;
+		transition: all 0.4s linear;
+	}
+}
+/* --------------------------------950px-------------------------------- */
+@media only screen and (max-width: 950px) {
+	.second-div {
+		gap: 1rem;
+		transition: all 0.4s linear;
+	}
+	.carousel .image {
+		max-width: 200px;
+		min-height: 140px;
+	}
+	.latest-releases .slot {
+		flex-direction: column;
+		min-width: 100px;
+		max-height: 800px;
+		margin-top: 5%;
+		transition: all 0.4s linear;
+	}
+	.latest-releases .slot .image {
+		min-width: 100px;
+		min-height: 220px;
+		transition: all 0.4s linear;
+	}
+	.playbar .album .album-like {
+		flex-wrap: wrap;
+	}
+	.playbar .main-control .top {
+		gap: 15%;
+	}
+}
+/* --------------------------------870px-------------------------------- */
+@media only screen and (max-width: 870px) {
+	.menu {
+		display: initial;
+		margin-top: auto;
+		margin-bottom: auto;
+		transition: all 0.4s linear;
+	}
+	.navbar .profile-pic {
+		display: none;
+		transition: all 0.4s linear;
+	}
+	.navbar .notification {
+		display: none;
+		transition: all 0.4s linear;
+	}
+	.carousel .image {
+		min-height: 120px;
+	}
+	.playbar .main-control .top {
+		gap: 20%;
+	}
+	.playbar .side-control {
+		flex-wrap: wrap;
+		gap: 10%;
+	}
+}
+/* --------------------------------800px-------------------------------- */
+@media only screen and (max-width: 800px) {
+	.carousel .image {
+		max-width: 260px;
+		min-height: 160px;
+	}
+	.second-div {
+		gap: 0.4rem;
+		transition: all 0.4s linear;
+	}
+	.navbar .favourites {
+		margin-left: 0.4rem;
+		transition: all 0.5s ease-in;
+	}
+	.left-side {
+		width: 96%;
+		padding: 2%;
+		margin-left: 2%;
+		display: block;
+		background: transparent;
+		z-index: 2;
+	}
+	.right-side {
+		width: 100%;
+		display: block;
+		height: auto;
+		overflow: hidden;
+	}
+	.right-side .playlist-header {
+		padding: 0% 10%;
+	}
+	.right-side .playlist-section .slot {
+		min-height: 150px;
+		gap: 3%;
+	}
+	.right-side .playlist-section .slot .image {
+		min-height: 100px;
+		min-width: 100px;
+	}
+	.popular-artists .artist-showcase {
+		padding-top: 2%;
+		gap: 1%;
+		margin-top: 3%;
+	}
+	.popular-artists .artist-showcase .artist {
+		margin-top: 5%;
+	}
+	.music-stations {
+		margin-top: 5%;
+	}
+	.latest-releases .slot {
+		flex-direction: row;
+		min-width: 0px;
+		max-height: 0px;
+	}
+	.latest-releases .slot .image {
+		min-width: 118px;
+		min-height: 0px;
+	}
+	.right-side .playlist-section .slot .song .about {
+		padding-left: 5%;
+	}
+}
+/* --------------------------------720px-------------------------------- */
+@media only screen and (max-width: 720px) {
+	.navbar div.search {
+		display: none;
+	}
+	.navbar .second-div {
+		justify-content: flex-end;
+		transition: all 0.5s ease-in;
+		width: 10%;
+	}
+	.navbar {
+		justify-content: space-between;
+		padding-right: 0%;
+	}
+	.navbar .first-div {
+		width: 90%;
+	}
+	.navbar .favourites {
+		transition: all 0.5s ease-in;
+		margin-left: 10%;
+	}
+	.menu .options li:first-child + li {
+		border-bottom: 1px solid black;
+	}
+	.menu .options li:last-child {
+		display: inline-block;
+		width: 100%;
+	}
+	.navbar .logo {
+		width: 40px;
+		min-width: 40px;
+		height: 40px;
+	}
+	.navbar .favourites {
+		transition: all 0.5s ease-in;
+		font-size: 0.8rem;
+	}
+	.navbar .company {
+		font-size: 1rem;
+	}
+	.navbar .company > * + * + * {
+		font-size: 1.4rem;
+	}
+	.menu #checkbox-label {
+		bottom: 20%;
+		font-size: 1.5rem;
+	}
+	.playbar .album .album-info p:first-child {
+		font-size: 0.8rem;
+		display: inline-block;
+	}
+}
+/* --------------------------------600px-------------------------------- */
+@media only screen and (max-width: 600px) {
+	.music-stations .logo {
+		position: sticky;
+		top: 5%;
+	}
+	.latest-releases .content .slot {
+		width: 100%;
+		min-height: 180px;
+	}
+	.latest-releases .slot .image {
+		min-width: 180px;
+		max-height: 180px;
+	}
+	.latest-releases .content {
+		flex-direction: column;
+	}
+	.carousel .image {
+		min-height: 130px;
+	}
+	.playbar {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.playbar .album {
+		display: none;
+	}
+	.playbar .main-control {
+		flex: 1 0 100%;
+	}
+	.playbar .side-control {
+		display: none;
+	}
+}
+/* --------------------------------460px-------------------------------- */
+@media only screen and (max-width: 460px) {
+	.right-side {
+		margin-top: 15%;
+		margin-bottom: 10%;
+	}
+	.latest-english-songs,
+	.latest-hindi-songs {
+		margin-top: 25%;
+	}
+	.mood-showcase {
+		margin-top: 25%;
+	}
+	.music-stations {
+		margin-top: 25%;
+	}
+	.latest-releases {
+		margin-top: 15%;
+	}
+	.carousel .image {
+		min-height: 70px;
+	}
+	footer {
+		justify-content: center;
+		align-items: center;
+	}
+	footer .two {
+		flex-direction: column;
+		margin-bottom: 5%;
+	}
+	footer .line {
+		border-right: 0;
+		border-bottom: 2px solid lightgray;
+		padding-bottom: 5%;
+	}
+	footer .contact {
+		margin-top: 5%;
+	}
+}
+/* --------------------------------400px-------------------------------- */
+@media only screen and (max-width: 400px) {
+	.latest-releases .content .slot {
+		width: 100%;
+		min-height: 180px;
+	}
+	.latest-releases .slot .image {
+		min-width: 110px;
+		max-height: 110px;
+	}
+}
