@@ -22,5 +22,5 @@ This is a Music Player App using CSS only, just like Static Spotify Clone.
 
 ## Screens
 <p align="left">
-<img height="300" width="400" src="https://user-images.githubusercontent.com/76626529/146537063-55268368-31da-4ab9-8e42-128692933539.png">
+<img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146537063-55268368-31da-4ab9-8e42-128692933539.png">
 </p>
