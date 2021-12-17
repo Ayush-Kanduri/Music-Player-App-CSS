@@ -17,5 +17,10 @@ This is a Music Player App using CSS only, just like Static Spotify Clone.
 
 #
 > #### Checkout the Website [Web Application](https://music-player-project-app.herokuapp.com/)
-> #### Checkout the Application Demo Video [YouTube](XYZ)
+> #### Checkout the Application Demo Video [YouTube](https://www.youtube.com/watch?v=8WehQfA_3X0)
 #
+
+## Screens
+<p align="left">
+<img height="300" width="400" src="https://user-images.githubusercontent.com/76626529/146537063-55268368-31da-4ab9-8e42-128692933539.png">
+</p>
