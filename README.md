@@ -21,8 +21,8 @@ This is a Music Player App using CSS only, just like Static Spotify Clone.
 #
 
 ## Screens
+### Desktop Version
 <p align="left">
-Desktop Version
 <img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146537063-55268368-31da-4ab9-8e42-128692933539.png">
 <img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146537936-d0397707-c2b1-452c-a7ec-e651381d7706.png">
 <img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146538046-078ef88f-f945-4729-9406-2d4510920ecf.png">
@@ -33,7 +33,9 @@ Desktop Version
 <img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146538059-29791234-33d6-470b-b3da-bb3613ae722e.png">
 <img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146538061-49295e04-65a2-452a-8c7e-ce35cb0f358c.png">
 <img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146538063-ebebef3f-9d39-48f7-bb32-8c26985b2b1e.png">
-Mobile Version
+</p>
+### Mobile Version
+<p align="left">
 <img height="300" width="200" src="https://user-images.githubusercontent.com/76626529/146538066-a7044570-9cc7-476a-839d-ac0f321d516b.png">
 <img height="300" width="200" src="https://user-images.githubusercontent.com/76626529/146538068-980fe98d-6937-46a0-9f37-1e0e02df4e2f.png">
 <img height="300" width="200" src="https://user-images.githubusercontent.com/76626529/146538069-a25cf191-92af-4839-a776-c43dd81d0c07.png">
