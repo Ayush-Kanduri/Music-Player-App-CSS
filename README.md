@@ -7,7 +7,7 @@
 
 ## ⭐ Introduction
 
-This is a Music Player App built using CSS & HTML only, just like Static Spotify Clone.
+This is a Music Player App built using CSS & HTML only, just like Static Spotify Clone. The Website is completely Responsive across all the Devices.
 
 -  Users are able to visit Web Pages.
 -  Users are able to view Information about Songs, Artists, Albums, Playlists, Queue & Playbar.
