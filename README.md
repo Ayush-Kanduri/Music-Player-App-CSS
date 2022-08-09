@@ -1,28 +1,58 @@
-# Music-Player-App-CSS
-This is a Music Player App using CSS only, just like Static Spotify Clone.
+# 𝐌𝐮𝐬𝐢𝐜 𝐏𝐥𝐚𝐲𝐞𝐫 𝐀𝐩𝐩 𝐔𝐬𝐢𝐧𝐠 𝐂𝐒𝐒 𝐎𝐧𝐥𝐲 🚀
 
-## Tools Used
-<p align="left">
-<img height="140" width="140" src="https://ps.w.org/display-php-version/assets/icon-256x256.png?rev=2075378">
+<br/>
+<p align="center">
+<img height="400" width="800" src="https://user-images.githubusercontent.com/76626529/146537063-55268368-31da-4ab9-8e42-128692933539.png">
+</p>
+
+## ⭐ Introduction
+
+This is a Music Player App built using CSS & HTML only, just like Static Spotify Clone.
+
+-  Users are able to visit Web Pages.
+-  Users are able to view Information about Songs, Artists, Albums, Playlists, Queue & Playbar.
+   <br/>
+   <br/>
+
+## 🔥 Getting Started With The Project
+
+-  Fork the Project in your Repository.
+-  Clone the Forked Repository in your Local System.
+-  Run on Live Server.
+-  Enjoy :)
+
+For any issues related to the project, raise an ISSUE in the respective Repository.
+<br/>
+<br/>
+
+## 🔨 Tools Used
+
+<p align="justify">
 <img height="140" width="140" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png">
 <img height="140" width="140" src="https://logodix.com/logo/470309.png">
 <img height="140" width="140" src="https://code.visualstudio.com/assets/apple-touch-icon.png">
 </p>
 
-* Library: None
-* Scripting: (PHP for Deploying the Application only on Heroku)
-* Front-End: HTML, CSS
-* Runtime Environment: None
-* Integrated Development Environment: VSCode
+-  Version Control System: Git
+-  VCS Hosting: GitHub
+-  Front-End: HTML, CSS
+-  Integrated Development Environment: VSCode
+   <br/>
+   <br/>
 
-#
-> #### Checkout the Website [Web Application](https://music-player-project-app.herokuapp.com/)
-> #### Checkout the Application Demo Video [YouTube](https://www.youtube.com/watch?v=8WehQfA_3X0)
-#
+## 🔗 Links
 
-## Screens
+> ## Checkout the Website [Web Application]()
+>
+> ## Checkout the Application Demo Video [YouTube](https://www.youtube.com/watch?v=8WehQfA_3X0)
+
+<br/>
+
+## 💻 Screens
+
 #### Desktop Version
-<p align="left">
+
+<p align="justify">
 <img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146537063-55268368-31da-4ab9-8e42-128692933539.png">
 <img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146537936-d0397707-c2b1-452c-a7ec-e651381d7706.png">
 <img height="300" width="600" src="https://user-images.githubusercontent.com/76626529/146538046-078ef88f-f945-4729-9406-2d4510920ecf.png">
@@ -38,7 +68,8 @@ This is a Music Player App using CSS only, just like Static Spotify Clone.
 #
 
 #### Mobile Version
-<p align="left">
+
+<p align="justify">
 <img height="300" width="200" src="https://user-images.githubusercontent.com/76626529/146538066-a7044570-9cc7-476a-839d-ac0f321d516b.png">
 <img height="300" width="200" src="https://user-images.githubusercontent.com/76626529/146538068-980fe98d-6937-46a0-9f37-1e0e02df4e2f.png">
 <img height="300" width="200" src="https://user-images.githubusercontent.com/76626529/146538069-a25cf191-92af-4839-a776-c43dd81d0c07.png">
@@ -61,11 +92,14 @@ This is a Music Player App using CSS only, just like Static Spotify Clone.
 <img height="300" width="200" src="https://user-images.githubusercontent.com/76626529/146538150-229e99c2-0fd1-4bd1-8dd6-28f2c6bdd18e.png"> 
 </p>
 
-## Follow me on:
+<br/>
+
+## 🐦 Follow Me:
+
 > [Dev Community](https://dev.to/ayushkanduri)
 
 > [Twitter](https://twitter.com/ayush_codes)
- 
+
 > [LinkedIn](https://www.linkedin.com/in/ayushkanduri/)
 
 > [YouTube](https://www.youtube.com/channel/UC6c1ajC_2jF7wQp7Y13t2bg)
