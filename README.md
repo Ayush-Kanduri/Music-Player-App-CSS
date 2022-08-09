@@ -42,7 +42,7 @@ For any issues related to the project, raise an ISSUE in the respective Reposito
 
 ## 🔗 Links
 
-> ## Checkout the Website [Web Application]()
+> ## Checkout the Website [Web Application](https://ayush-kanduri.github.io/Music-Player-App-CSS/)
 >
 > ## Checkout the Application Demo Video [YouTube](https://www.youtube.com/watch?v=8WehQfA_3X0)
 
