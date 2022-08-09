@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Music Player</title>
-		<script
-			src="https://kit.fontawesome.com/c3cf4991a5.js"
-			crossorigin="anonymous"
-		></script>
+		<script src="https://kit.fontawesome.com/34162fcf4d.js" crossorigin="anonymous"></script>  
 		<link
 			rel="shortcut icon"
 			href="../assets/images/main-screen/logo.png"
 			type="image/x-icon"
 		/>
-		<link rel="stylesheet" href="../assets/css/general.css" />
-		<link rel="stylesheet" href="../assets/css/main-screen.css" />
-		<link rel="stylesheet" href="../assets/css/navbar.css" />
-		<link rel="stylesheet" href="../assets/css/footer.css" />
-		<link rel="stylesheet" href="../assets/css/mediaQuery-mainScreen.css" />
-		<link rel="stylesheet" href="../assets/css/playbar.css" />
+		<link rel="stylesheet" href="assets/css/general.css" />  
+		<link rel="stylesheet" href="assets/css/main-screen.css" />
+		<link rel="stylesheet" href="assets/css/navbar.css" />
+		<link rel="stylesheet" href="assets/css/footer.css" />
+		<link rel="stylesheet" href="assets/css/mediaQuery-mainScreen.css" />
+		<link rel="stylesheet" href="assets/css/playbar.css" /> 
 	</head>
 	<body>
 		<!-- Main Container Start -->
@@ -40,12 +37,12 @@
 				<div class="second-div flex row jc-c ai-c">
 					<!-- Search Bar -->
 					<div class="search flex row jc-c ai-c">
-						<button class="search-icon"><i class="fas fa-search"></i></button>
+						<button type="button" role="button" aria-label="search-icon" class="search-icon"><i class="fas fa-search"></i></button> 
 						<input type="text" class="search" placeholder="Search..." />
-						<button class="mic-icon"><i class="fas fa-microphone"></i></button>
+						<button  role="button" aria-label="mic-icon" class="mic-icon"><i class="fas fa-microphone"></i></button>  
 					</div>
 					<!-- Notifications -->
-					<button class="bell-btn"><i class="fas fa-bell notification"></i></button>
+					<button role="button" aria-label="bell-btn" class="bell-btn"><i class="fas fa-bell notification"></i></button> 
 					<!-- Profile Pic -->
 					<div class="profile-pic"></div>
 					<!-- Responsive Hamburger Menu -->
@@ -88,12 +85,13 @@
 									type="checkbox"
 									id="play-toggle1"
 									name="play-toggle1"
+									title="play-toggle1" 
 								/>
 								<label for="play-toggle1">
 									<div class="play">
 										<i class="fas fa-play"></i>
 										<i class="fas fa-pause"></i>
-									</div>
+									</div> 
 								</label>
 								<!-- -------Playbar Start------- -->
 								<div class="playbar flex row">
@@ -112,8 +110,8 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle1" name="playbar-play-toggle1" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle1" name="playbar-play-toggle1" title="playbar-play-toggle1"/>
 											<label for="playbar-play-toggle1">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -123,7 +121,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -131,7 +129,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -145,11 +143,11 @@
 										type="checkbox"
 										name="options-checkbox1"
 										id="options-checkbox1"
+										title="options"
 									/>
 									<label for="options-checkbox1" id="options-label">
 										<i
-											style="color: white"
-											class="fas fa-ellipsis-h"
+											class="fas fa-ellipsis-h wh"
 										></i>
 									</label>
 									<ul class="options-playlist font">
@@ -157,8 +155,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-play"
+													class="fas fa-play bl"
 												></i>
 												&nbsp;&nbsp; Play Now
 											</a>
@@ -167,8 +164,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-plus"
+													class="fas fa-plus bl"
 												></i>
 												&nbsp;&nbsp; Add To Queue
 											</a>
@@ -177,8 +173,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-heart"
+													class="fas fa-heart bl"
 												></i>
 												&nbsp;&nbsp; Add To Favourites
 											</a>
@@ -187,8 +182,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-info-circle"
+													class="fas fa-info-circle bl"
 												></i>
 												&nbsp;&nbsp; Get Info
 											</a>
@@ -212,6 +206,7 @@
 									type="checkbox"
 									id="play-toggle2"
 									name="play-toggle2"
+									title="play-toggle2"
 								/>
 								<label for="play-toggle2">
 									<div class="play">
@@ -236,8 +231,8 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle2" name="playbar-play-toggle2" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle2" name="playbar-play-toggle2" title="playbar-play-toggle2" />
 											<label for="playbar-play-toggle2">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -247,7 +242,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:08</span>
 										</div>
 									</div>
@@ -255,7 +250,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -269,11 +264,11 @@
 										type="checkbox"
 										name="options-checkbox2"
 										id="options-checkbox2"
+										title="options-checkbox2"
 									/>
 									<label for="options-checkbox2" id="options-label">
 										<i
-											style="color: white"
-											class="fas fa-ellipsis-h"
+											class="fas fa-ellipsis-h wh"
 										></i>
 									</label>
 									<ul class="options-playlist font">
@@ -281,8 +276,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-play"
+													class="fas fa-play bl"
 												></i>
 												&nbsp;&nbsp; Play Now
 											</a>
@@ -291,8 +285,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-plus"
+													class="fas fa-plus bl"
 												></i>
 												&nbsp;&nbsp; Add To Queue
 											</a>
@@ -301,8 +294,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-heart"
+													class="fas fa-heart bl"
 												></i>
 												&nbsp;&nbsp; Add To Favourites
 											</a>
@@ -311,8 +303,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-info-circle"
+													class="fas fa-info-circle bl"
 												></i>
 												&nbsp;&nbsp; Get Info
 											</a>
@@ -336,6 +327,7 @@
 									type="checkbox"
 									id="play-toggle3"
 									name="play-toggle3"
+									title="play-toggle3"
 								/>
 								<label for="play-toggle3">
 									<div class="play">
@@ -360,8 +352,8 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle3" name="playbar-play-toggle3" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle3" name="playbar-play-toggle3" title="toggle"/>
 											<label for="playbar-play-toggle3">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -371,7 +363,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:28</span>
 										</div>
 									</div>
@@ -379,7 +371,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -393,11 +385,11 @@
 										type="checkbox"
 										name="options-checkbox3"
 										id="options-checkbox3"
+										title="options-checkbox3"
 									/>
 									<label for="options-checkbox3" id="options-label">
 										<i
-											style="color: white"
-											class="fas fa-ellipsis-h"
+											class="fas fa-ellipsis-h wh"
 										></i>
 									</label>
 									<ul class="options-playlist font">
@@ -405,8 +397,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-play"
+													class="fas fa-play bl"
 												></i>
 												&nbsp;&nbsp; Play Now
 											</a>
@@ -415,8 +406,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-plus"
+													class="fas fa-plus bl"
 												></i>
 												&nbsp;&nbsp; Add To Queue
 											</a>
@@ -425,8 +415,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-heart"
+													class="fas fa-heart bl"
 												></i>
 												&nbsp;&nbsp; Add To Favourites
 											</a>
@@ -435,8 +424,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-info-circle"
+													class="fas fa-info-circle bl"
 												></i>
 												&nbsp;&nbsp; Get Info
 											</a>
@@ -460,6 +448,7 @@
 									type="checkbox"
 									id="play-toggle4"
 									name="play-toggle4"
+									title="toggle"
 								/>
 								<label for="play-toggle4">
 									<div class="play">
@@ -484,8 +473,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle4" name="playbar-play-toggle4" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle4" name="playbar-play-toggle4" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle4">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -495,7 +486,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:59</span>
 										</div>
 									</div>
@@ -503,7 +494,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -517,11 +508,11 @@
 										type="checkbox"
 										name="options-checkbox4"
 										id="options-checkbox4"
+									title="toggle"
 									/>
 									<label for="options-checkbox4" id="options-label">
 										<i
-											style="color: white"
-											class="fas fa-ellipsis-h"
+											class="fas fa-ellipsis-h wh"
 										></i>
 									</label>
 									<ul class="options-playlist font">
@@ -529,8 +520,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-play"
+													class="fas fa-play bl"
 												></i>
 												&nbsp;&nbsp; Play Now
 											</a>
@@ -539,8 +529,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-plus"
+													class="fas fa-plus bl"
 												></i>
 												&nbsp;&nbsp; Add To Queue
 											</a>
@@ -549,8 +538,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-heart"
+													class="fas fa-heart bl"
 												></i>
 												&nbsp;&nbsp; Add To Favourites
 											</a>
@@ -559,8 +547,7 @@
 											<a href="#">
 												&nbsp;&nbsp;
 												<i
-													style="color: black"
-													class="fas fa-info-circle"
+													class="fas fa-info-circle bl"
 												></i>
 												&nbsp;&nbsp; Get Info
 											</a>
@@ -587,7 +574,7 @@
 						<!-- Artist1 -->
 						<div class="artist flex col jc-sb ai-c">
 							<div class="image">
-								<a href="SinglePlaylistScreen.html">
+								<a href="SinglePlaylistScreen.html" title="SinglePlaylistScreen">
 									<div class="play">
 										<i class="fas fa-play"></i>
 									</div>
@@ -598,7 +585,7 @@
 						<!-- Artist2 -->
 						<div class="artist flex col jc-sb ai-c">
 							<div class="image">
-								<a href="SinglePlaylistScreen.html">
+								<a href="SinglePlaylistScreen.html" title="SinglePlaylistScreen">
 									<div class="play">
 										<i class="fas fa-play"></i>
 									</div>
@@ -609,7 +596,7 @@
 						<!-- Artist3 -->
 						<div class="artist flex col jc-sb ai-c">
 							<div class="image">
-								<a href="SinglePlaylistScreen.html">
+								<a href="SinglePlaylistScreen.html" title="SinglePlaylistScreen">
 									<div class="play">
 										<i class="fas fa-play"></i>
 									</div>
@@ -620,7 +607,7 @@
 						<!-- Artist4 -->
 						<div class="artist flex col jc-sb ai-c">
 							<div class="image">
-								<a href="SinglePlaylistScreen.html">
+								<a href="SinglePlaylistScreen.html" title="SinglePlaylistScreen">
 									<div class="play">
 										<i class="fas fa-play"></i>
 									</div>
@@ -631,7 +618,7 @@
 						<!-- Artist5 -->
 						<div class="artist flex col jc-sb ai-c">
 							<div class="image">
-								<a href="SinglePlaylistScreen.html">
+								<a href="SinglePlaylistScreen.html" title="SinglePlaylistScreen">
 									<div class="play">
 										<i class="fas fa-play"></i>
 									</div>
@@ -642,7 +629,7 @@
 						<!-- Artist6 -->
 						<div class="artist flex col jc-sb ai-c">
 							<div class="image">
-								<a href="SinglePlaylistScreen.html">
+								<a href="SinglePlaylistScreen.html" title="SinglePlaylistScreen">
 									<div class="play">
 										<i class="fas fa-play"></i>
 									</div>
@@ -767,6 +754,7 @@
 									type="checkbox"
 									id="play-toggle5"
 									name="play-toggle5"
+									title="toggle"
 								/>
 								<label for="play-toggle5">
 									<div class="play">
@@ -785,6 +773,7 @@
 									type="checkbox"
 									id="play-toggle6"
 									name="play-toggle6"
+									title="toggle"
 								/>
 								<label for="play-toggle6">
 									<div class="play">
@@ -803,6 +792,7 @@
 									type="checkbox"
 									id="play-toggle7"
 									name="play-toggle7"
+									title="toggle"
 								/>
 								<label for="play-toggle7">
 									<div class="play">
@@ -821,6 +811,7 @@
 									type="checkbox"
 									id="play-toggle8"
 									name="play-toggle8"
+									title="toggle"
 								/>
 								<label for="play-toggle8">
 									<div class="play">
@@ -839,6 +830,7 @@
 									type="checkbox"
 									id="play-toggle9"
 									name="play-toggle9"
+									title="toggle"
 								/>
 								<label for="play-toggle9">
 									<div class="play">
@@ -857,6 +849,7 @@
 									type="checkbox"
 									id="play-toggle10"
 									name="play-toggle10"
+									title="toggle"
 								/>
 								<label for="play-toggle10">
 									<div class="play">
@@ -885,6 +878,7 @@
 									type="checkbox"
 									id="play-toggle11"
 									name="play-toggle11"
+									title="toggle"
 								/>
 								<label for="play-toggle11">
 									<div class="play">
@@ -903,6 +897,7 @@
 									type="checkbox"
 									id="play-toggle12"
 									name="play-toggle12"
+									title="toggle"
 								/>
 								<label for="play-toggle12">
 									<div class="play">
@@ -921,6 +916,7 @@
 									type="checkbox"
 									id="play-toggle13"
 									name="play-toggle13"
+									title="toggle"
 								/>
 								<label for="play-toggle13">
 									<div class="play">
@@ -939,6 +935,7 @@
 									type="checkbox"
 									id="play-toggle14"
 									name="play-toggle14"
+									title="toggle"
 								/>
 								<label for="play-toggle14">
 									<div class="play">
@@ -957,6 +954,7 @@
 									type="checkbox"
 									id="play-toggle15"
 									name="play-toggle15"
+									title="toggle"
 								/>
 								<label for="play-toggle15">
 									<div class="play">
@@ -975,6 +973,7 @@
 									type="checkbox"
 									id="play-toggle16"
 									name="play-toggle16"
+									title="toggle"
 								/>
 								<label for="play-toggle16">
 									<div class="play">
@@ -1001,6 +1000,7 @@
 										type="checkbox"
 										name="options-checkbox5"
 										id="options-checkbox5"
+									title="options"
 									/>
 									<label for="options-checkbox5" id="options-label">
 										<p>
@@ -1033,6 +1033,7 @@
 									type="checkbox"
 									id="play-toggle17"
 									name="play-toggle17"
+									title="toggle"
 								/>
 								<label for="play-toggle17">
 									<div class="play">
@@ -1057,8 +1058,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle17" name="playbar-play-toggle17" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle17" name="playbar-play-toggle17" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle17">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1068,7 +1071,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1076,7 +1079,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1104,6 +1107,7 @@
 									type="checkbox"
 									id="play-toggle18"
 									name="play-toggle18"
+									title="toggle"
 								/>
 								<label for="play-toggle18">
 									<div class="play">
@@ -1128,8 +1132,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle18" name="playbar-play-toggle18" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle18" name="playbar-play-toggle18" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle18">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1139,7 +1145,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1147,7 +1153,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1175,6 +1181,7 @@
 									type="checkbox"
 									id="play-toggle19"
 									name="play-toggle19"
+									title="toggle"
 								/>
 								<label for="play-toggle19">
 									<div class="play">
@@ -1199,8 +1206,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle19" name="playbar-play-toggle19" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle19" name="playbar-play-toggle19" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle19">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1210,7 +1219,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1218,7 +1227,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1246,6 +1255,7 @@
 									type="checkbox"
 									id="play-toggle20"
 									name="play-toggle20"
+									title="toggle"
 								/>
 								<label for="play-toggle20">
 									<div class="play">
@@ -1270,8 +1280,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle20" name="playbar-play-toggle20" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle20" name="playbar-play-toggle20" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle20">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1281,7 +1293,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1289,7 +1301,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1317,6 +1329,7 @@
 									type="checkbox"
 									id="play-toggle21"
 									name="play-toggle21"
+									title="toggle"
 								/>
 								<label for="play-toggle21">
 									<div class="play">
@@ -1341,8 +1354,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle21" name="playbar-play-toggle21" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle21" name="playbar-play-toggle21" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle21">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1352,7 +1367,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1360,7 +1375,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1388,6 +1403,7 @@
 									type="checkbox"
 									id="play-toggle22"
 									name="play-toggle22"
+									title="toggle"
 								/>
 								<label for="play-toggle22">
 									<div class="play">
@@ -1412,8 +1428,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle22" name="playbar-play-toggle22" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle22" name="playbar-play-toggle22" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle22">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1423,7 +1441,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1431,7 +1449,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1459,6 +1477,7 @@
 									type="checkbox"
 									id="play-toggle23"
 									name="play-toggle23"
+									title="toggle"
 								/>
 								<label for="play-toggle23">
 									<div class="play">
@@ -1483,8 +1502,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle23" name="playbar-play-toggle23" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle23" name="playbar-play-toggle23" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle23">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1494,7 +1515,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1502,7 +1523,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1530,6 +1551,7 @@
 									type="checkbox"
 									id="play-toggle24"
 									name="play-toggle24"
+									title="toggle"
 								/>
 								<label for="play-toggle24">
 									<div class="play">
@@ -1554,8 +1576,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle24" name="playbar-play-toggle24" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle24" name="playbar-play-toggle24" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle24">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1565,7 +1589,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1573,7 +1597,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1601,6 +1625,7 @@
 									type="checkbox"
 									id="play-toggle25"
 									name="play-toggle25"
+									title="toggle"
 								/>
 								<label for="play-toggle25">
 									<div class="play">
@@ -1625,8 +1650,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle25" name="playbar-play-toggle25" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle25" name="playbar-play-toggle25" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle25">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1636,7 +1663,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1644,7 +1671,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1672,6 +1699,7 @@
 									type="checkbox"
 									id="play-toggle26"
 									name="play-toggle26"
+									title="toggle"
 								/>
 								<label for="play-toggle26">
 									<div class="play">
@@ -1696,8 +1724,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle26" name="playbar-play-toggle26" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle26" name="playbar-play-toggle26" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle26">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1707,7 +1737,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1715,7 +1745,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1743,6 +1773,7 @@
 									type="checkbox"
 									id="play-toggle27"
 									name="play-toggle27"
+									title="toggle"
 								/>
 								<label for="play-toggle27">
 									<div class="play">
@@ -1767,8 +1798,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle27" name="playbar-play-toggle27" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle27" name="playbar-play-toggle27" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle27">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1778,7 +1811,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1786,7 +1819,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1814,6 +1847,7 @@
 									type="checkbox"
 									id="play-toggle28"
 									name="play-toggle28"
+									title="toggle"
 								/>
 								<label for="play-toggle28">
 									<div class="play">
@@ -1838,8 +1872,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle28" name="playbar-play-toggle28" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle28" name="playbar-play-toggle28" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle28">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1849,7 +1885,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1857,7 +1893,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1885,6 +1921,7 @@
 									type="checkbox"
 									id="play-toggle29"
 									name="play-toggle29"
+									title="toggle"
 								/>
 								<label for="play-toggle29">
 									<div class="play">
@@ -1909,8 +1946,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle29" name="playbar-play-toggle29" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle29" name="playbar-play-toggle29" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle29">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1920,7 +1959,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1928,7 +1967,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -1956,6 +1995,7 @@
 									type="checkbox"
 									id="play-toggle30"
 									name="play-toggle30"
+									title="toggle"
 								/>
 								<label for="play-toggle30">
 									<div class="play">
@@ -1980,8 +2020,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle30" name="playbar-play-toggle30" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle30" name="playbar-play-toggle30" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle30">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -1991,7 +2033,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -1999,7 +2041,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -2027,6 +2069,7 @@
 									type="checkbox"
 									id="play-toggle31"
 									name="play-toggle31"
+									title="toggle"
 								/>
 								<label for="play-toggle31">
 									<div class="play">
@@ -2051,8 +2094,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle31" name="playbar-play-toggle31" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle31" name="playbar-play-toggle31" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle31">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -2062,7 +2107,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -2070,7 +2115,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -2098,6 +2143,7 @@
 									type="checkbox"
 									id="play-toggle32"
 									name="play-toggle32"
+									title="toggle"
 								/>
 								<label for="play-toggle32">
 									<div class="play">
@@ -2122,8 +2168,10 @@
 										<div class="top flex row jc-sa ai-c">
 											<i class="fas fa-random"></i>
 											<i class="fas fa-step-backward"></i>
-											<input type="text" style="display: none;">
-											<input type="checkbox" id="playbar-play-toggle32" name="playbar-play-toggle32" />
+											<input type="text" class="hide" title="hide">
+											<input type="checkbox" id="playbar-play-toggle32" name="playbar-play-toggle32" 
+									title="toggle"
+											/>
 											<label for="playbar-play-toggle32">
 												<i class="far fa-play-circle"></i>
 												<i class="far fa-pause-circle"></i>
@@ -2133,7 +2181,7 @@
 										</div>
 										<div class="bottom flex row jc-c ai-c">
 											<span class="font">2:30</span>	
-											<input type="range" name="timeline" id="timeline" min="0" max="100" value="50">
+											<input type="range" name="timeline" class="timeline" min="0" max="100" value="50" title="timeline">
 											<span class="font">4:50</span>
 										</div>
 									</div>
@@ -2141,7 +2189,7 @@
 										<i class="fas fa-bars"></i>
 										<i class="fas fa-laptop-house"></i>
 										<i class="fas fa-volume-up"></i>
-										<input type="range" id="volume" name="volume" min="0" max="100" value="35" step="5">
+										<input type="range" class="volume" name="volume" min="0" max="100" value="35" step="5" title="vol">
 										<i class="fas fa-expand-alt"></i>
 									</div>
 								</div>
@@ -2185,9 +2233,8 @@
 							<form
 								action=""
 								method="POST"
-								class="flex jc-c ai-c"
-								style="width: 100%"
-							>
+								class="flex jc-c ai-c wd-100"
+							>   
 								<table>
 									<tr>
 										<td colspan="2">
@@ -2248,4 +2295,4 @@
 		</div>
 		<!-- Main Container End -->
 	</body>
-</html>
+</html> 

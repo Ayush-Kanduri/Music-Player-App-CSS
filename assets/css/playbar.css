@@ -823,7 +823,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline,
+	.timeline,
 .right-side
 	.playlist-section
 	.slot
@@ -833,7 +833,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline {
+	.timeline {
 	-webkit-appearance: none;
 	width: 70%;
 	background-color: transparent;
@@ -846,7 +846,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline::-webkit-slider-runnable-track,
+	.timeline::-webkit-slider-runnable-track,
 .right-side
 	.playlist-section
 	.slot
@@ -856,7 +856,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline::-webkit-slider-runnable-track {
+	.timeline::-webkit-slider-runnable-track {
 	width: 100%;
 	height: 53%;
 	cursor: pointer;
@@ -874,7 +874,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline::-webkit-slider-thumb,
+	.timeline::-webkit-slider-thumb,
 .right-side
 	.playlist-section
 	.slot
@@ -884,7 +884,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline::-webkit-slider-thumb {
+	.timeline::-webkit-slider-thumb {
 	box-shadow: 1px 1px 1px #000000;
 	border: 1px solid #000000;
 	height: 20px;
@@ -903,7 +903,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline:focus,
+	.timeline:focus,
 .right-side
 	.playlist-section
 	.slot
@@ -913,7 +913,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline:focus {
+	.timeline:focus {
 	outline: none;
 }
 .latest-releases
@@ -924,7 +924,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline:focus::-webkit-slider-runnable-track,
+	.timeline:focus::-webkit-slider-runnable-track,
 .right-side
 	.playlist-section
 	.slot
@@ -934,7 +934,7 @@
 	+ .playbar
 	.main-control
 	.bottom
-	#timeline:focus::-webkit-slider-runnable-track {
+	.timeline:focus::-webkit-slider-runnable-track {
 	background: #37e88a;
 }
 /* --------------Side Controls Component-------------- */

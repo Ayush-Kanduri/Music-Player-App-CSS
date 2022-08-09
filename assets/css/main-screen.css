@@ -132,6 +132,21 @@ body::-webkit-scrollbar {
 .latest-releases .artist {
 	color: gray;
 }
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.wh {
+	color: white;
+}
+.bl {
+	color: black;
+}
+.wd-100{
+	width: 100%;
+}
 /* ----------------Toggle All Play-Pause Icon on Song Images---------------- */
 .latest-releases .slot .image input[type="checkbox"]:nth-child(1),
 .latest-english-songs .content .song .image input[type="checkbox"]:nth-child(1),
